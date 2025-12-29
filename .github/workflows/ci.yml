@@ -7,9 +7,12 @@ on:
   pull_request:
     branches:
       - main
+  workflow_dispatch:  # Allows manual triggering
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
@@ -17,6 +20,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch all history for proper versioning
 
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -25,14 +30,28 @@ jobs:
 
       - name: Install dependencies
         run: |
+          pip install --upgrade pip
           pip install mkdocs-material
           pip install mkdocs-git-revision-date-localized-plugin
           pip install mkdocs-git-committers-plugin-2
 
+      - name: Configure Git
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email github-actions[bot]@users.noreply.github.com
+
       - name: Build
-        run: mkdocs build
+        run: mkdocs build --verbose
 
       - name: Deploy
         if: github.ref == 'refs/heads/main'
-        run: mkdocs gh-deploy --force
+        run: |
+          mkdocs gh-deploy --force --verbose
+          # Ensure .nojekyll exists in gh-pages branch to disable Jekyll
+          git fetch origin gh-pages:gh-pages || true
+          git checkout gh-pages
+          touch .nojekyll
+          git add .nojekyll
+          git commit -m "Add .nojekyll to disable Jekyll" || echo "No changes to commit"
+          git push origin gh-pages || echo "Nothing to push"
 

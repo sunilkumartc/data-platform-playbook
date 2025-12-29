@@ -100,6 +100,14 @@ The playbook is hosted on GitHub Pages: **[https://sunilkumartc.github.io/data-p
 
 The site is automatically deployed to GitHub Pages via GitHub Actions when you push to the `main` branch.
 
+**If changes don't appear on GitHub Pages:**
+
+1. **Check GitHub Actions**: Go to your repo → Actions tab → Check if the workflow ran successfully
+2. **Manual trigger**: Go to Actions → "Deploy MkDocs" → "Run workflow" → Select main branch
+3. **Clear browser cache**: Hard refresh (Ctrl+Shift+R or Cmd+Shift+R) or use incognito mode
+4. **Check GitHub Pages settings**: Repo → Settings → Pages → Source should be "Deploy from a branch" → Branch: `gh-pages` → Folder: `/ (root)`
+5. **Wait a few minutes**: GitHub Pages can take 1-5 minutes to update after deployment
+
 ## 📁 Project Structure
 
 ```
