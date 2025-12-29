@@ -1,6 +1,10 @@
 # Ingestion Architecture
 
+> "If a data problem can't be explained in one screen, the system is already broken."
+
 Ingestion is the foundation of your data platform. Get it wrong, and everything downstream suffers. This chapter provides deep, opinionated guidance on building reliable, cost-effective ingestion systems.
+
+> "Data freshness is just trust, measured in minutes."
 
 ## Decision Framework
 

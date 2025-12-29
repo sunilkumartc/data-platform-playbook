@@ -1,6 +1,10 @@
 # Cost Efficiency & Scale
 
+> "Cost explosions happen when no one feels ownership."
+
 Cost optimization isn't about cutting corners—it's about spending wisely. At scale, small inefficiencies compound into massive waste. This chapter provides practical, actionable guidance on reducing costs by 20-40% without sacrificing quality or performance.
+
+> "Every broken pipeline started as 'we'll clean it later.'"
 
 ## Cost Drivers
 

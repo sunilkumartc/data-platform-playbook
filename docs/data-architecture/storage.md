@@ -1,6 +1,10 @@
 # Storage & Data Architecture
 
+> "Most data outages are just bad communication bugs."
+
 Storage is where data lives. Get the architecture right, and queries are fast, costs are low, and operations are smooth. Get it wrong, and you'll pay in performance, cost, and complexity.
+
+> "Gen-Z doesn't hate complexity. They hate unclear systems."
 
 ## Data Lake vs Data Warehouse
 

@@ -1,8 +1,12 @@
 # Foundations
 
+> "Data problems aren't boring. They're just badly explained."
+
 ## What is Data Engineering?
 
 Data Engineering is the discipline of designing, building, and operating systems that transform raw data into reliable, accessible, and actionable information at scale. Unlike data science (which focuses on analysis and modeling) or software engineering (which focuses on application logic), data engineering sits at the intersection of infrastructure, reliability, and data product delivery.
+
+> "Data engineering isn't plumbing. It's product design with consequences."
 
 ### Modern Definition
 
@@ -16,12 +20,15 @@ At its core, data engineering is about:
 
 ### The Shift: From ETL to Platform
 
-Traditional data engineering focused on **ETL pipelines**—point-to-point data movement with transformation logic embedded in the pipeline. Modern data engineering is about **platforms**—self-serve infrastructure that enables teams to:
+Traditional data engineering focused on **ETL pipelines**—point-to-point data movement with transformation logic embedded in the pipeline. Modern data engineering is about **platforms**—infrastructure that enables teams to:
 
-- Ingest data with minimal friction
-- Transform data using their preferred tools
-- Store data in cost-appropriate tiers
-- Serve data to consumers (analytics, ML, operational systems)
+**Ingestion** — Standardized patterns and contracts for pipeline creation with minimal friction
+
+**Transformation** — Managed compute environments supporting multiple tools and reusable frameworks
+
+**Storage** — Cost-appropriate tiering with automated lifecycle management and flexible formats
+
+**Serving** — Multiple access patterns (SQL, APIs, feature stores) optimized for analytics, ML, and operational use cases
 
 ## Core Principles
 

@@ -1,6 +1,10 @@
 # Manager / Leadership View
 
+> "The next generation doesn't need more dashboards. They need better stories about why the data matters."
+
 This chapter is for data engineering leaders—managers, directors, and executives who need to build, scale, and measure data platform teams. It provides frameworks for making strategic decisions and evaluating success.
+
+> "If Gen-Z doesn't care about your data problem, you've explained the wrong problem."
 
 ## What to Measure
 

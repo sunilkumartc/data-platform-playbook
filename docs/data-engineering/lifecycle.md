@@ -1,6 +1,10 @@
 # End-to-End Lifecycle
 
+> "Data freshness is just trust, measured in minutes."
+
 The data lifecycle encompasses the complete journey from source systems to consumption. Understanding this flow is critical for designing scalable, maintainable data platforms.
+
+> "Every broken pipeline started as 'we'll clean it later.'"
 
 ## Overview
 

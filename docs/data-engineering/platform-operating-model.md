@@ -1,6 +1,10 @@
 # Platform & Operating Model
 
+> "The biggest opportunity for managers isn't better data — it's making data problems understandable."
+
 Building a data platform isn't just about technology—it's about creating an operating model that enables teams to move fast while maintaining quality, cost control, and reliability. This chapter covers how to structure your platform organization and processes.
+
+> "If Gen-Z doesn't care about your data problem, you've explained the wrong problem."
 
 ## Central Platform vs Domain Ownership
 

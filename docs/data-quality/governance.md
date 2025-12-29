@@ -1,6 +1,10 @@
 # Quality, Governance & Observability
 
+> "Observability is just empathy for future engineers."
+
 Data quality and governance aren't nice-to-haves—they're prerequisites for trust. Without them, your platform becomes a liability, not an asset. This chapter covers how to build quality into your platform and govern data effectively.
+
+> "Pipelines fail quietly. People fail when no one explains why they exist."
 
 ## Data Quality Framework
 

@@ -10,17 +10,17 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   palette:
-    # Light mode
+    # Light mode - Deep Purple with Orange accent
     - scheme: default
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: orange
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # Dark mode
+    # Dark mode - Deep Purple with Orange accent
     - scheme: slate
-      primary: indigo
-      accent: indigo
+      primary: deep purple
+      accent: orange
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
@@ -31,14 +31,21 @@ theme:
     - navigation.expand
     - navigation.top
     - navigation.indexes
+    - navigation.sidebar
+    - navigation.path
     - search.suggest
     - search.highlight
+    - search.share
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
+    - content.tooltips
   icon:
     repo: fontawesome/brands/github
     logo: material/database
+  font:
+    text: Inter
+    code: JetBrains Mono
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -62,24 +69,50 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
+      baselevel: 2
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
   - Home: index.md
+  - About: about.md
   - Data Engineering:
-    - Foundations: 01-foundations.md
-    - Lifecycle: 02-lifecycle.md
-    - Ingestion: 03-ingestion.md
-    - Storage: 04-storage.md
-    - Platform & Operating Model: 05-platform-operating-model.md
-    - Quality & Governance: 06-quality-governance.md
-    - Cost Efficiency: 07-cost-efficiency.md
+    - Data Engineering: data-engineering/index.md
+    - Foundations: data-engineering/foundations.md
+    - Lifecycle: data-engineering/lifecycle.md
+    - Platform & Operating Model: data-engineering/platform-operating-model.md
+    - Cost Efficiency: data-engineering/cost-efficiency.md
+  - Data Ingestion:
+    - Data Ingestion: data-ingestion/index.md
+    - Batch vs Streaming: data-ingestion/batch-vs-streaming.md
+    - Change Data Capture: data-ingestion/cdc.md
+    - Push vs Pull: data-ingestion/push-vs-pull.md
+  - Data Architecture:
+    - Data Architecture: data-architecture/index.md
+    - Storage: data-architecture/storage.md
+    - Lakehouse: data-architecture/lakehouse.md
+    - Ingestion Architecture: data-architecture/ingestion-architecture.md
+  - Data Orchestration:
+    - Data Orchestration: data-orchestration/index.md
+    - Airflow: data-orchestration/airflow.md
+    - dbt: data-orchestration/dbt.md
+  - Data Processing:
+    - Data Processing: data-processing/index.md
+    - Apache Spark: data-processing/spark.md
+    - Google BigQuery: data-processing/bigquery.md
+  - Data Quality:
+    - Data Quality: data-quality/index.md
+    - Governance: data-quality/governance.md
+    - Quality Checks: data-quality/checks.md
   - Reference:
-    - Tooling Landscape: 08-tooling-landscape.md
-    - Future Trends: 09-future-trends.md
-    - Leadership View: 10-leadership-view.md
+    - Tooling Landscape: reference/tooling-landscape.md
+    - Future Trends: reference/future-trends.md
+    - Leadership View: reference/leadership-view.md
 
 plugins:
-  - search
+  - search:
+      lang: en
   - git-revision-date-localized:
       enable_creation_date: true
       type: timeago
@@ -90,6 +123,8 @@ extra:
       link: https://github.com/sunilkumartc
   version:
     provider: mike
+  analytics:
+    provider: google
+    property: G-XXXXXXXXXX  # Add your GA4 ID if needed
 
 copyright: Copyright &copy; 2024 Sunil Kumar T C
-

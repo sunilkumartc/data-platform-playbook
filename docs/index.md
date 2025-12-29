@@ -4,85 +4,128 @@
 
 ## Welcome! 👋
 
-**SELAMAT DATANG!** (Welcome in Indonesian 🇮🇩)
+**नमस्ते!** (Namaste - Welcome in India 🇮🇳)
 
 This playbook provides **actionable, opinionated guidance** for data engineering teams operating at enterprise scale. It covers the full spectrum from foundational principles to advanced platform architecture, with a focus on **cost efficiency, reliability, and self-serve capabilities**.
 
-## Target Audience
+## Who This Is For
 
+- **Data Engineers** - Building and maintaining data pipelines and platforms
 - **Data Engineering Managers** - Building and scaling data teams
-- **Data Platform Managers** - Designing and operating platforms
+- **Data Platform Managers** - Designing and operating platforms  
 - **Staff / Principal Data Engineers** - Making architectural decisions
 - **Platform Architects** - Designing enterprise data systems
 
 ## Quick Navigation
 
-### 🎯 Core Concepts
+### 🎯 Core Topics
 
-- **[Foundations](01-foundations.md)** - Modern definition of Data Engineering, core principles, and platform thinking
-- **[End-to-End Lifecycle](02-lifecycle.md)** - Complete data journey: ingestion → transformation → storage → serving
+<div class="grid cards" markdown>
 
-### 🏗️ Architecture Deep Dives
+-   :material-database:{ .lg .middle } __[Data Engineering](data-engineering/index.md)__
 
-- **[Ingestion Architecture](03-ingestion.md)** - Batch vs streaming vs CDC, push vs pull, tool selection, cost vs freshness trade-offs
-- **[Storage & Data Architecture](04-storage.md)** - Data lake vs warehouse, CDC patterns, external tables, lifecycle policies
-- **[Platform & Operating Model](05-platform-operating-model.md)** - Central platform vs domain ownership, paved paths, contract-first ingestion, cost attribution
+    ---
 
-### 🔧 Operations & Governance
+    Foundations, lifecycle, platform thinking, and cost efficiency
 
-- **[Quality, Governance & Observability](06-quality-governance.md)** - SLAs, freshness, schema enforcement, metadata, lineage, observability
-- **[Cost Efficiency & Scale](07-cost-efficiency.md)** - Common cost traps, streaming vs micro-batch, zombie pipeline detection, reduction patterns
+    [:octicons-arrow-right-24: Get started](data-engineering/index.md)
 
-### 📚 Reference & Strategy
+-   :material-import:{ .lg .middle } __[Data Ingestion](data-ingestion/index.md)__
 
-- **[Tooling Landscape](08-tooling-landscape.md)** - Ingestion engines, orchestration, transformation frameworks, metadata tools
-- **[Future & Emerging Trends](09-future-trends.md)** - Data contracts, data mesh, feature stores, AI-assisted data engineering
-- **[Manager / Leadership View](10-leadership-view.md)** - What to measure, scaling teams, evaluating architecture maturity
+    ---
 
-## Quick Start Guides
+    Batch vs streaming, CDC, push vs pull patterns
 
-!!! tip "New to Data Engineering?"
-    Start with **[Foundations](01-foundations.md)** to understand core concepts and principles.
+    [:octicons-arrow-right-24: Learn more](data-ingestion/index.md)
 
-!!! success "Building a Platform?"
-    Read **[Platform & Operating Model](05-platform-operating-model.md)** first to design your operating model.
+-   :material-folder-multiple:{ .lg .middle } __[Data Architecture](data-architecture/index.md)__
 
-!!! warning "Optimizing Costs?"
-    Jump to **[Cost Efficiency & Scale](07-cost-efficiency.md)** for practical optimization strategies.
+    ---
 
-!!! info "Evaluating Architecture?"
-    See **[Leadership View](10-leadership-view.md)** for frameworks and metrics.
+    Storage design, lakehouse patterns, ingestion architecture
+
+    [:octicons-arrow-right-24: Explore](data-architecture/index.md)
+
+-   :material-sitemap:{ .lg .middle } __[Data Orchestration](data-orchestration/index.md)__
+
+    ---
+
+    Airflow, dbt, workflow management
+
+    [:octicons-arrow-right-24: Discover](data-orchestration/index.md)
+
+-   :material-cog:{ .lg .middle } __[Data Processing](data-processing/index.md)__
+
+    ---
+
+    Spark, BigQuery, distributed processing
+
+    [:octicons-arrow-right-24: Process](data-processing/index.md)
+
+-   :material-shield-check:{ .lg .middle } __[Data Quality](data-quality/index.md)__
+
+    ---
+
+    Governance, quality checks, SLAs, observability
+
+    [:octicons-arrow-right-24: Ensure quality](data-quality/index.md)
+
+</div>
 
 ## Core Principles
 
 This playbook is built on these foundational principles:
 
-- **📦 Data as a Product**: Treat data assets as first-class products with clear ownership, SLAs, and contracts
-- **🔀 Separation of Concerns**: Clear boundaries between ingestion, transformation, storage, and serving
-- **🚀 Platform Thinking**: Build self-serve capabilities that enable teams, not bottlenecks
-- **💰 Cost Awareness**: Every architectural decision should consider cost implications
-- **💡 Opinionated Guidance**: Clear recommendations, not generic explanations
-
-## Quote
-
-> My perspective is that data architecture is like an ever-evolving river. It's like the Mississippi River, the Mississippi River from one day to the next is never the same. It's always changing. The same goes to data architecture. What's happened is Data Warehousing applies to structured transaction-based data. That's really the heart of data warehousing, but there's other data in the corporation that's viable and important data as well.
->
-> **— Bill Inmon, "Father of Data Warehouse"**
+- **📦 Data as a Product** - Treat data assets as first-class products with clear ownership, SLAs, and contracts
+- **🔀 Separation of Concerns** - Clear boundaries between ingestion, transformation, storage, and serving
+- **🚀 Platform Thinking** - Build self-serve capabilities that enable teams, not bottlenecks
+- **💰 Cost Awareness** - Every architectural decision should consider cost implications
+- **💡 Opinionated Guidance** - Clear recommendations, not generic explanations
 
 ## What You'll Learn
 
 This playbook covers:
 
-1. **Foundations** - What modern data engineering is and core principles
-2. **Lifecycle** - Complete data journey from source to consumption
-3. **Ingestion** - Patterns, tools, and trade-offs for getting data in
-4. **Storage** - Data lake vs warehouse, partitioning, formats
-5. **Platform** - Operating models, self-serve capabilities, contracts
-6. **Quality & Governance** - SLAs, schema enforcement, observability
-7. **Cost Efficiency** - Optimization strategies and patterns
-8. **Tooling** - Comprehensive tool selection guide
-9. **Future Trends** - What's coming next in data engineering
-10. **Leadership** - How to measure, scale, and evaluate platforms
+1. **Data Engineering** - Core concepts, lifecycle, platform thinking
+2. **Data Ingestion** - Patterns, tools, and trade-offs for getting data in
+3. **Data Architecture** - Storage design, lakehouse, partitioning
+4. **Data Orchestration** - Scheduling, coordinating pipelines
+5. **Data Processing** - Spark, BigQuery, distributed processing
+6. **Data Quality** - Governance, checks, SLAs, observability
+
+## Quotes
+
+> "Data is a precious thing and will last longer than the systems themselves."
+>
+> **— Tim Berners-Lee**
+
+---
+
+> **"The biggest opportunity for managers isn't better data — it's making data problems understandable."**
+
+> **"The next generation doesn't need more dashboards. They need better stories about why the data matters."**
+
+> **"Data problems aren't boring. They're just badly explained."**
+
+## Getting Started
+
+!!! tip "New to Data Engineering?"
+    Start with **[Data Engineering](data-engineering/index.md)** to understand core concepts and principles.
+
+!!! success "Building a Platform?"
+    Read **[Data Engineering → Platform & Operating Model](data-engineering/platform-operating-model.md)** first to design your operating model.
+
+!!! warning "Optimizing Costs?"
+    Jump to **[Data Engineering → Cost Efficiency](data-engineering/cost-efficiency.md)** for practical optimization strategies.
+
+!!! info "Evaluating Architecture?"
+    See **[Reference → Leadership View](reference/leadership-view.md)** for frameworks and metrics.
+
+## About the Author
+
+Learn more about the author and their experience in data platform architecture and engineering.
+
+[:octicons-arrow-right-24: About](about.md)
 
 ## Contributing
 
