@@ -12,31 +12,31 @@
         <meta name="author" content="Sunil Kumar T C">
       
       
-        <link rel="canonical" href="https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/cdc/">
+        <link rel="canonical" href="https://sunilkumartc.github.io/data-platform-playbook/platform-strategy-and-future-direction/">
       
       
-        <link rel="prev" href="../batch-vs-streaming/">
+        <link rel="prev" href="../data-quality/checks/">
       
       
-        <link rel="next" href="../push-vs-pull/">
+        <link rel="next" href="../reference/future-trends/">
       
       
         
       
       
-      <link rel="icon" href="../../assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
-        <title>Change Data Capture - Data Platform Playbook</title>
+        <title>Next-Gen Strategy - Data Platform Playbook</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
       
       
 
@@ -55,9 +55,9 @@
       
     
     
-      <link rel="stylesheet" href="../../css/timeago.css">
+      <link rel="stylesheet" href="../css/timeago.css">
     
-    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
   
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#change-data-capture-cdc" class="md-skip">
+        <a href="#next-gen-data-platform-strategy-future-direction" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
 
 <header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Data Platform Playbook" class="md-header__button md-logo" aria-label="Data Platform Playbook" data-md-component="logo">
+    <a href=".." title="Data Platform Playbook" class="md-header__button md-logo" aria-label="Data Platform Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"/></svg>
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Change Data Capture
+              Next-Gen Strategy
             
           </span>
         </div>
@@ -244,7 +244,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
+      <a href=".." class="md-tabs__link">
         
   
   
@@ -263,7 +263,7 @@
   
   
     <li class="md-tabs__item">
-      <a href="../../about/" class="md-tabs__link">
+      <a href="../about/" class="md-tabs__link">
         
   
   
@@ -284,7 +284,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../data-engineering/" class="md-tabs__link">
+        <a href="../data-engineering/" class="md-tabs__link">
           
   
   
@@ -302,13 +302,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../data-ingestion/" class="md-tabs__link">
           
   
   
@@ -330,7 +328,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../data-architecture/" class="md-tabs__link">
+        <a href="../data-architecture/" class="md-tabs__link">
           
   
   
@@ -352,7 +350,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../data-orchestration/" class="md-tabs__link">
+        <a href="../data-orchestration/" class="md-tabs__link">
           
   
   
@@ -374,7 +372,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../data-processing/" class="md-tabs__link">
+        <a href="../data-processing/" class="md-tabs__link">
           
   
   
@@ -396,7 +394,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../data-quality/" class="md-tabs__link">
+        <a href="../data-quality/" class="md-tabs__link">
           
   
   
@@ -414,11 +412,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../platform-strategy-and-future-direction/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -440,7 +440,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../reference/tooling-landscape/" class="md-tabs__link">
+        <a href="../reference/tooling-landscape/" class="md-tabs__link">
           
   
   
@@ -482,7 +482,7 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Data Platform Playbook" class="md-nav__button md-logo" aria-label="Data Platform Playbook" data-md-component="logo">
+    <a href=".." title="Data Platform Playbook" class="md-nav__button md-logo" aria-label="Data Platform Playbook" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 3C7.58 3 4 4.79 4 7s3.58 4 8 4 8-1.79 8-4-3.58-4-8-4M4 9v3c0 2.21 3.58 4 8 4s8-1.79 8-4V9c0 2.21-3.58 4-8 4s-8-1.79-8-4m0 5v3c0 2.21 3.58 4 8 4s8-1.79 8-4v-3c0 2.21-3.58 4-8 4s-8-1.79-8-4"/></svg>
@@ -512,7 +512,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+      <a href=".." class="md-nav__link">
         
   
   
@@ -539,7 +539,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../about/" class="md-nav__link">
+      <a href="../about/" class="md-nav__link">
         
   
   
@@ -599,7 +599,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data-engineering/" class="md-nav__link ">
+            <a href="../data-engineering/" class="md-nav__link ">
               
   
   
@@ -643,7 +643,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-engineering/foundations/" class="md-nav__link">
+      <a href="../data-engineering/foundations/" class="md-nav__link">
         
   
   
@@ -671,7 +671,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-engineering/lifecycle/" class="md-nav__link">
+      <a href="../data-engineering/lifecycle/" class="md-nav__link">
         
   
   
@@ -699,7 +699,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-engineering/platform-operating-model/" class="md-nav__link">
+      <a href="../data-engineering/platform-operating-model/" class="md-nav__link">
         
   
   
@@ -727,7 +727,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-engineering/cost-efficiency/" class="md-nav__link">
+      <a href="../data-engineering/cost-efficiency/" class="md-nav__link">
         
   
   
@@ -759,8 +759,6 @@
       
   
   
-    
-  
   
   
     
@@ -782,23 +780,22 @@
     
     
       
-        
-        
-      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../" class="md-nav__link ">
+            <a href="../data-ingestion/" class="md-nav__link ">
               
   
   
@@ -816,13 +813,13 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="">
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
             
@@ -842,7 +839,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../batch-vs-streaming/" class="md-nav__link">
+      <a href="../data-ingestion/batch-vs-streaming/" class="md-nav__link">
         
   
   
@@ -867,35 +864,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Change Data Capture
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../data-ingestion/cdc/" class="md-nav__link">
         
   
   
@@ -911,374 +883,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#change-data-capture-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Change Data Capture (CDC)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Change Data Capture (CDC)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#why-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why CDC?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Why CDC?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#problems-with-traditional-approaches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Problems with Traditional Approaches
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cdc-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CDC Patterns
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CDC Patterns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-log-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Log-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-trigger-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Trigger-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-query-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Query-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cdc-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CDC Tools
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CDC Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debezium" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Debezium
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#google-datastream" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Google Datastream
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aws-dms" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AWS DMS
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cdc-current-state-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CDC + Current State Patterns
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CDC + Current State Patterns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Problem
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-1-merge-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 1: Merge Pattern
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-2-snapshot-incremental" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 2: Snapshot + Incremental
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-3-event-sourcing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 3: Event Sourcing
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#implementation-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Implementation Best Practices
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Implementation Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-handle-transaction-boundaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Handle Transaction Boundaries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-handle-schema-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Handle Schema Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-handle-failures" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Handle Failures
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-monitor-lag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Monitor Lag
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#common-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Common Challenges
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Challenges">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#challenge-1-high-volume-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 1: High-Volume Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-2-schema-evolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 2: Schema Evolution
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-3-transaction-consistency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 3: Transaction Consistency
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cost-considerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost Considerations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#related-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Topics
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1291,7 +895,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../push-vs-pull/" class="md-nav__link">
+      <a href="../data-ingestion/push-vs-pull/" class="md-nav__link">
         
   
   
@@ -1319,7 +923,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../strategic-guidelines/" class="md-nav__link">
+      <a href="../data-ingestion/strategic-guidelines/" class="md-nav__link">
         
   
   
@@ -1385,7 +989,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data-architecture/" class="md-nav__link ">
+            <a href="../data-architecture/" class="md-nav__link ">
               
   
   
@@ -1429,7 +1033,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-architecture/storage/" class="md-nav__link">
+      <a href="../data-architecture/storage/" class="md-nav__link">
         
   
   
@@ -1457,7 +1061,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-architecture/lakehouse/" class="md-nav__link">
+      <a href="../data-architecture/lakehouse/" class="md-nav__link">
         
   
   
@@ -1485,7 +1089,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-architecture/ingestion-architecture/" class="md-nav__link">
+      <a href="../data-architecture/ingestion-architecture/" class="md-nav__link">
         
   
   
@@ -1549,7 +1153,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data-orchestration/" class="md-nav__link ">
+            <a href="../data-orchestration/" class="md-nav__link ">
               
   
   
@@ -1593,7 +1197,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-orchestration/airflow/" class="md-nav__link">
+      <a href="../data-orchestration/airflow/" class="md-nav__link">
         
   
   
@@ -1621,7 +1225,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-orchestration/dbt/" class="md-nav__link">
+      <a href="../data-orchestration/dbt/" class="md-nav__link">
         
   
   
@@ -1685,7 +1289,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data-processing/" class="md-nav__link ">
+            <a href="../data-processing/" class="md-nav__link ">
               
   
   
@@ -1729,7 +1333,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-processing/spark/" class="md-nav__link">
+      <a href="../data-processing/spark/" class="md-nav__link">
         
   
   
@@ -1757,7 +1361,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-processing/bigquery/" class="md-nav__link">
+      <a href="../data-processing/bigquery/" class="md-nav__link">
         
   
   
@@ -1821,7 +1425,7 @@
         
           
           <div class="md-nav__link md-nav__container">
-            <a href="../../data-quality/" class="md-nav__link ">
+            <a href="../data-quality/" class="md-nav__link ">
               
   
   
@@ -1865,7 +1469,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-quality/governance/" class="md-nav__link">
+      <a href="../data-quality/governance/" class="md-nav__link">
         
   
   
@@ -1893,7 +1497,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../data-quality/checks/" class="md-nav__link">
+      <a href="../data-quality/checks/" class="md-nav__link">
         
   
   
@@ -1925,8 +1529,10 @@
       
   
   
+    
   
   
+  
     
     
       
@@ -1940,21 +1546,22 @@
     
     
       
+        
+        
+      
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" checked>
         
           
-        
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_9" >
-        
-          
-          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="">
             
   
   
@@ -1972,7 +1579,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1987,10 +1594,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../platform-strategy-and-future-direction/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Next-Gen Strategy
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -2006,6 +1638,385 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#next-gen-data-platform-strategy-future-direction" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next-Gen Data Platform Strategy &amp; Future Direction
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Next-Gen Data Platform Strategy &amp; Future Direction">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Topics
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Key Topics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#agentic-data-platforms-and-data-zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agentic Data Platforms and Data Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-maturity-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Maturity Evolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-implications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Implications
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#agentic-data-platforms-and-data-zones_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Agentic Data Platforms and Data Zones
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Agentic Data Platforms and Data Zones">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-agentic-means" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What "Agentic" Means
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-agentic-platforms-differ" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How Agentic Platforms Differ
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#autonomy-automation-and-feedback-loops" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Autonomy, Automation, and Feedback Loops
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-zones-ownership-and-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Zones: Ownership and Governance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Zones: Ownership and Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-raw-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Raw Zone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-curated-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Curated Zone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-processed-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Processed Zone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-feature-ai-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Feature / AI Zone
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-ownership-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domain Ownership at Scale
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concrete-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concrete Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Concrete Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#self-healing-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Self-Healing Pipelines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drift-detection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Drift Detection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#domain-owned-data-products" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Domain-Owned Data Products
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-maturity-evolution_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Maturity Evolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform Maturity Evolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-manual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1: Manual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-automated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2: Automated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-agentic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3: Agentic
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-implications_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Implications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Organizational Implications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-platform-teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Platform Teams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-domain-teams" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Domain Teams
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-leadership" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        For Leadership
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#related-topics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Related Topics
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2018,7 +2029,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/future-trends/" class="md-nav__link">
+      <a href="../reference/future-trends/" class="md-nav__link">
         
   
   
@@ -2046,7 +2057,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/leadership-view/" class="md-nav__link">
+      <a href="../reference/leadership-view/" class="md-nav__link">
         
   
   
@@ -2139,7 +2150,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../reference/tooling-landscape/" class="md-nav__link">
+      <a href="../reference/tooling-landscape/" class="md-nav__link">
         
   
   
@@ -2192,15 +2203,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#change-data-capture-cdc" class="md-nav__link">
+  <a href="#next-gen-data-platform-strategy-future-direction" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Change Data Capture (CDC)
+        Next-Gen Data Platform Strategy &amp; Future Direction
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Change Data Capture (CDC)">
+    <nav class="md-nav" aria-label="Next-Gen Data Platform Strategy &amp; Future Direction">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2215,22 +2226,44 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-cdc" class="md-nav__link">
+  <a href="#key-topics" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why CDC?
+        Key Topics
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Why CDC?">
+    <nav class="md-nav" aria-label="Key Topics">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#problems-with-traditional-approaches" class="md-nav__link">
+  <a href="#agentic-data-platforms-and-data-zones" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problems with Traditional Approaches
+        Agentic Data Platforms and Data Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-maturity-evolution" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Maturity Evolution
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizational-implications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizational Implications
       
     </span>
   </a>
@@ -2243,22 +2276,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cdc-patterns" class="md-nav__link">
+  <a href="#agentic-data-platforms-and-data-zones_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CDC Patterns
+        Agentic Data Platforms and Data Zones
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="CDC Patterns">
+    <nav class="md-nav" aria-label="Agentic Data Platforms and Data Zones">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-log-based-cdc" class="md-nav__link">
+  <a href="#what-agentic-means" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Log-Based CDC
+        What "Agentic" Means
       
     </span>
   </a>
@@ -2266,10 +2299,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#2-trigger-based-cdc" class="md-nav__link">
+  <a href="#how-agentic-platforms-differ" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Trigger-Based CDC
+        How Agentic Platforms Differ
       
     </span>
   </a>
@@ -2277,10 +2310,66 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#3-query-based-cdc" class="md-nav__link">
+  <a href="#autonomy-automation-and-feedback-loops" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. Query-Based CDC
+        Autonomy, Automation, and Feedback Loops
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-zones-ownership-and-governance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Zones: Ownership and Governance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Zones: Ownership and Governance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-raw-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Raw Zone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-curated-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Curated Zone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-processed-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Processed Zone
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-feature-ai-zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Feature / AI Zone
       
     </span>
   </a>
@@ -2293,22 +2382,33 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cdc-tools" class="md-nav__link">
+  <a href="#domain-ownership-at-scale" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CDC Tools
+        Domain Ownership at Scale
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="CDC Tools">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#concrete-examples" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Concrete Examples
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Concrete Examples">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debezium" class="md-nav__link">
+  <a href="#self-healing-pipelines" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Debezium
+        Self-Healing Pipelines
       
     </span>
   </a>
@@ -2316,10 +2416,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#google-datastream" class="md-nav__link">
+  <a href="#drift-detection" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Google Datastream
+        Drift Detection
       
     </span>
   </a>
@@ -2327,10 +2427,65 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#aws-dms" class="md-nav__link">
+  <a href="#domain-owned-data-products" class="md-nav__link">
     <span class="md-ellipsis">
       
-        AWS DMS
+        Domain-Owned Data Products
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#platform-maturity-evolution_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Platform Maturity Evolution
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Platform Maturity Evolution">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#stage-1-manual" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 1: Manual
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-2-automated" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 2: Automated
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#stage-3-agentic" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Stage 3: Agentic
       
     </span>
   </a>
@@ -2343,22 +2498,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cdc-current-state-patterns" class="md-nav__link">
+  <a href="#organizational-implications_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CDC + Current State Patterns
+        Organizational Implications
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="CDC + Current State Patterns">
+    <nav class="md-nav" aria-label="Organizational Implications">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#for-platform-teams" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problem
+        For Platform Teams
       
     </span>
   </a>
@@ -2366,10 +2521,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#solution-1-merge-pattern" class="md-nav__link">
+  <a href="#for-domain-teams" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Solution 1: Merge Pattern
+        For Domain Teams
       
     </span>
   </a>
@@ -2377,21 +2532,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#solution-2-snapshot-incremental" class="md-nav__link">
+  <a href="#for-leadership" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Solution 2: Snapshot + Incremental
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-3-event-sourcing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 3: Event Sourcing
+        For Leadership
       
     </span>
   </a>
@@ -2400,128 +2544,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#implementation-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Implementation Best Practices
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Implementation Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-handle-transaction-boundaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Handle Transaction Boundaries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-handle-schema-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Handle Schema Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-handle-failures" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Handle Failures
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-monitor-lag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Monitor Lag
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#common-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Common Challenges
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Challenges">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#challenge-1-high-volume-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 1: High-Volume Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-2-schema-evolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 2: Schema Evolution
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-3-transaction-consistency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 3: Transaction Consistency
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cost-considerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost Considerations
-      
-    </span>
-  </a>
   
 </li>
         
@@ -2566,7 +2588,7 @@
   
   
     <li class="md-path__item">
-      <a href="../.." class="md-path__link">
+      <a href=".." class="md-path__link">
         
   <span class="md-ellipsis">
     Home
@@ -2584,10 +2606,10 @@
     
     
       <li class="md-path__item">
-        <a href="../" class="md-path__link">
+        <a href="./" class="md-path__link">
           
   <span class="md-ellipsis">
-    Data Ingestion
+    Platform Strategy
   </span>
 
         </a>
@@ -2609,217 +2631,290 @@
   
 
 
-  <h1>Change Data Capture</h1>
+  <h1>Next-Gen Strategy</h1>
 
-<h2 id="change-data-capture-cdc">Change Data Capture (CDC)<a class="headerlink" href="#change-data-capture-cdc" title="Permanent link">&para;</a></h2>
+<h2 id="next-gen-data-platform-strategy-future-direction">Next-Gen Data Platform Strategy &amp; Future Direction<a class="headerlink" href="#next-gen-data-platform-strategy-future-direction" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Capturing database changes in real-time to maintain synchronized data across systems.</p>
+<p>"The biggest opportunity for managers isn't better data — it's making data problems understandable."</p>
 </blockquote>
+<p>This section provides strategic guidance for platform leaders, directors, and architects on where data platforms are heading and how to position your organization for the future.</p>
 <h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
-<p>Change Data Capture (CDC) is a pattern for capturing and propagating changes made to a database. Instead of periodically querying for changes, CDC reads the database transaction log to capture inserts, updates, and deletes as they happen.</p>
-<h3 id="why-cdc">Why CDC?<a class="headerlink" href="#why-cdc" title="Permanent link">&para;</a></h3>
-<h4 id="problems-with-traditional-approaches">Problems with Traditional Approaches<a class="headerlink" href="#problems-with-traditional-approaches" title="Permanent link">&para;</a></h4>
-<p><strong>Full Extract:</strong>
-- ❌ Inefficient (transfers all data, even unchanged)
-- ❌ High source system load
-- ❌ Slow for large tables</p>
-<p><strong>Timestamp-based Incremental:</strong>
-- ❌ Misses deletes
-- ❌ May miss updates if timestamp not updated
-- ❌ Requires source system changes</p>
-<p><strong>CDC Solution:</strong>
-- ✅ Captures all changes (inserts, updates, deletes)
-- ✅ Low overhead (reads transaction log)
-- ✅ Real-time or near real-time
-- ✅ Maintains transaction consistency</p>
-<h3 id="cdc-patterns">CDC Patterns<a class="headerlink" href="#cdc-patterns" title="Permanent link">&para;</a></h3>
-<h4 id="1-log-based-cdc">1. Log-Based CDC<a class="headerlink" href="#1-log-based-cdc" title="Permanent link">&para;</a></h4>
-<p><strong>How it works:</strong>
-Reads database transaction logs (WAL, binlog, redo logs) to capture changes.</p>
-<p><strong>Architecture:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Database → Transaction Log → CDC Tool → Message Queue → Storage
-</span></code></pre></div></p>
-<p><strong>Pros:</strong>
-- ✅ Low overhead (doesn't query tables)
-- ✅ Captures all changes
-- ✅ Maintains transaction consistency
-- ✅ Real-time</p>
-<p><strong>Cons:</strong>
-- ❌ Requires database configuration
-- ❌ Database-specific (different for each DB)</p>
-<p><strong>Tools:</strong>
-- Debezium (Kafka Connect)
-- AWS DMS (Database Migration Service)
-- Google Datastream
-- Striim</p>
-<h4 id="2-trigger-based-cdc">2. Trigger-Based CDC<a class="headerlink" href="#2-trigger-based-cdc" title="Permanent link">&para;</a></h4>
-<p><strong>How it works:</strong>
-Database triggers write changes to a change table.</p>
-<p><strong>Architecture:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Database → Trigger → Change Table → CDC Tool → Storage
-</span></code></pre></div></p>
-<p><strong>Pros:</strong>
-- ✅ Works with any database
-- ✅ Captures all changes
-- ✅ No external tools needed</p>
-<p><strong>Cons:</strong>
-- ❌ Higher overhead (triggers on every change)
-- ❌ Requires database changes
-- ❌ May impact source system performance</p>
-<h4 id="3-query-based-cdc">3. Query-Based CDC<a class="headerlink" href="#3-query-based-cdc" title="Permanent link">&para;</a></h4>
-<p><strong>How it works:</strong>
-Poll for changes using timestamps or version columns.</p>
-<p><strong>Architecture:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CDC Tool → Query Database → Process Changes → Storage
-</span></code></pre></div></p>
-<p><strong>Pros:</strong>
-- ✅ Simple, no database changes
-- ✅ Works with any database
-- ✅ Easy to implement</p>
-<p><strong>Cons:</strong>
-- ❌ May miss deletes
-- ❌ Polling overhead
-- ❌ Higher latency
-- ❌ May miss updates if timestamp not updated</p>
-<p><strong>When to use:</strong>
-- Legacy systems
-- Can't modify database
-- Acceptable to miss some changes</p>
-<h3 id="cdc-tools">CDC Tools<a class="headerlink" href="#cdc-tools" title="Permanent link">&para;</a></h3>
-<h4 id="debezium">Debezium<a class="headerlink" href="#debezium" title="Permanent link">&para;</a></h4>
-<p><strong>Best for:</strong> Kafka-based CDC, open source</p>
-<p><strong>Pros:</strong>
-- ✅ Open source
-- ✅ Kafka-native
-- ✅ Many database connectors
-- ✅ Reliable</p>
-<p><strong>Cons:</strong>
-- ❌ Requires Kafka infrastructure
-- ❌ Self-managed</p>
-<p><strong>Use when:</strong>
-- Already using Kafka
-- Need open source solution
-- Have operations team</p>
-<h4 id="google-datastream">Google Datastream<a class="headerlink" href="#google-datastream" title="Permanent link">&para;</a></h4>
-<p><strong>Best for:</strong> GCP-native CDC, managed service</p>
-<p><strong>Pros:</strong>
-- ✅ Managed service (no ops)
-- ✅ GCP-integrated
-- ✅ Reliable
-- ✅ Easy setup</p>
-<p><strong>Cons:</strong>
-- ❌ GCP-only
-- ❌ Expensive
-- ❌ Limited database support</p>
-<p><strong>Use when:</strong>
-- GCP stack
-- Want managed service
-- Cost acceptable</p>
-<h4 id="aws-dms">AWS DMS<a class="headerlink" href="#aws-dms" title="Permanent link">&para;</a></h4>
-<p><strong>Best for:</strong> AWS-native replication, migrations</p>
-<p><strong>Pros:</strong>
-- ✅ Managed service
-- ✅ AWS-integrated
-- ✅ Good for migrations</p>
-<p><strong>Cons:</strong>
-- ❌ AWS-only
-- ❌ Can be expensive
-- ❌ Complex configuration</p>
-<p><strong>Use when:</strong>
-- AWS stack
-- Need managed service
-- Database migrations</p>
-<h3 id="cdc-current-state-patterns">CDC + Current State Patterns<a class="headerlink" href="#cdc-current-state-patterns" title="Permanent link">&para;</a></h3>
-<h4 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h4>
-<p>CDC streams capture changes, but analytics often needs <strong>current state</strong> (latest value per key).</p>
-<h4 id="solution-1-merge-pattern">Solution 1: Merge Pattern<a class="headerlink" href="#solution-1-merge-pattern" title="Permanent link">&para;</a></h4>
-<p><strong>Merge CDC events into current state table:</strong></p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">MERGE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">current_state</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">target</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">USING</span><span class="w"> </span><span class="n">cdc_events</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">source</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">ON</span><span class="w"> </span><span class="n">target</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">id</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;UPDATE&#39;</span><span class="w"> </span><span class="k">THEN</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">col1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">col1</span><span class="p">,</span><span class="w"> </span><span class="n">updated_at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="k">timestamp</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;DELETE&#39;</span><span class="w"> </span><span class="k">THEN</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="k">DELETE</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">WHEN</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;INSERT&#39;</span><span class="w"> </span><span class="k">THEN</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="k">INSERT</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">col1</span><span class="p">,</span><span class="w"> </span><span class="n">updated_at</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="k">source</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">col1</span><span class="p">,</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="k">timestamp</span><span class="p">)</span>
-</span></code></pre></div>
-<p><strong>Tools:</strong> Spark, Flink, BigQuery MERGE</p>
-<h4 id="solution-2-snapshot-incremental">Solution 2: Snapshot + Incremental<a class="headerlink" href="#solution-2-snapshot-incremental" title="Permanent link">&para;</a></h4>
-<p><strong>Periodic snapshots + incremental updates:</strong></p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Daily snapshot</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">current_state_2024_01_15</span><span class="w"> </span><span class="k">AS</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">current_state_2024_01_14</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">cdc_events</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">WHERE</span><span class="w"> </span><span class="nb">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2024-01-15&#39;</span>
-</span></code></pre></div>
-<p><strong>Pros:</strong> Simple, easy to reprocess<br />
-<strong>Cons:</strong> Storage overhead, slower queries</p>
-<h4 id="solution-3-event-sourcing">Solution 3: Event Sourcing<a class="headerlink" href="#solution-3-event-sourcing" title="Permanent link">&para;</a></h4>
-<p><strong>Store all events, compute current state on read:</strong></p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- Current state = latest event per key</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">events</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">timestamp</span><span class="w"> </span><span class="k">DESC</span>
-</span></code></pre></div>
-<p><strong>Pros:</strong> Full history, audit trail<br />
-<strong>Cons:</strong> Expensive queries, complex logic</p>
+<p>Modern data platforms are evolving from passive infrastructure to <strong>agentic systems</strong> that actively manage data quality, optimize costs, and enable domain autonomy. This evolution requires new thinking about platform architecture, operating models, and organizational structure.</p>
+<h3 id="key-topics">Key Topics<a class="headerlink" href="#key-topics" title="Permanent link">&para;</a></h3>
+<h4 id="agentic-data-platforms-and-data-zones"><a href="./#agentic-data-platforms-and-data-zones">Agentic Data Platforms and Data Zones</a><a class="headerlink" href="#agentic-data-platforms-and-data-zones" title="Permanent link">&para;</a></h4>
+<p>Understanding how platforms become self-managing and how data zones enable scale.</p>
+<h4 id="platform-maturity-evolution"><a href="./#platform-maturity-evolution">Platform Maturity Evolution</a><a class="headerlink" href="#platform-maturity-evolution" title="Permanent link">&para;</a></h4>
+<p>How platforms evolve from manual to automated to agentic.</p>
+<h4 id="organizational-implications"><a href="./#organizational-implications">Organizational Implications</a><a class="headerlink" href="#organizational-implications" title="Permanent link">&para;</a></h4>
+<p>What agentic platforms mean for teams, roles, and operating models.</p>
+<hr />
+<h3 id="agentic-data-platforms-and-data-zones_1">Agentic Data Platforms and Data Zones<a class="headerlink" href="#agentic-data-platforms-and-data-zones_1" title="Permanent link">&para;</a></h3>
+<h4 id="what-agentic-means">What "Agentic" Means<a class="headerlink" href="#what-agentic-means" title="Permanent link">&para;</a></h4>
+<p><strong>Agentic platforms</strong> are data platforms that can:
+- <strong>Detect and respond</strong> to issues autonomously
+- <strong>Optimize themselves</strong> based on usage patterns
+- <strong>Learn from failures</strong> and prevent recurrence
+- <strong>Enable domain teams</strong> without constant platform team intervention</p>
+<p>This is different from <strong>passive platforms</strong> that require manual intervention for every issue, optimization, or change.</p>
 <div class="admonition tip">
-<p class="admonition-title">Recommendation</p>
-<p>Use merge pattern for most cases. It's efficient and maintains current state.</p>
+<p class="admonition-title">For Directors</p>
+<p>Agentic platforms reduce "keep the lights on" (KTLO) work by 60-80%, allowing platform teams to focus on strategic capabilities rather than operational firefighting.</p>
 </div>
-<h3 id="implementation-best-practices">Implementation Best Practices<a class="headerlink" href="#implementation-best-practices" title="Permanent link">&para;</a></h3>
-<h4 id="1-handle-transaction-boundaries">1. Handle Transaction Boundaries<a class="headerlink" href="#1-handle-transaction-boundaries" title="Permanent link">&para;</a></h4>
-<p>CDC should maintain transaction consistency. Process all changes in a transaction together.</p>
-<h4 id="2-handle-schema-changes">2. Handle Schema Changes<a class="headerlink" href="#2-handle-schema-changes" title="Permanent link">&para;</a></h4>
-<p>Database schema changes can break CDC. Use schema registry to handle evolution.</p>
-<h4 id="3-handle-failures">3. Handle Failures<a class="headerlink" href="#3-handle-failures" title="Permanent link">&para;</a></h4>
-<p>CDC must be resilient to failures:
-- Checkpoint progress
-- Handle duplicate events (idempotency)
-- Retry on failures</p>
-<h4 id="4-monitor-lag">4. Monitor Lag<a class="headerlink" href="#4-monitor-lag" title="Permanent link">&para;</a></h4>
-<p>Track CDC lag (time between change and processing):
-- Alert if lag &gt; threshold
-- Monitor queue depth
-- Track processing rate</p>
-<h3 id="common-challenges">Common Challenges<a class="headerlink" href="#common-challenges" title="Permanent link">&para;</a></h3>
-<h4 id="challenge-1-high-volume-changes">Challenge 1: High-Volume Changes<a class="headerlink" href="#challenge-1-high-volume-changes" title="Permanent link">&para;</a></h4>
-<p><strong>Problem:</strong> Database with millions of changes per day.</p>
-<p><strong>Solution:</strong>
-- Partition by table/date
-- Parallel processing
-- Batch processing (micro-batch)</p>
-<h4 id="challenge-2-schema-evolution">Challenge 2: Schema Evolution<a class="headerlink" href="#challenge-2-schema-evolution" title="Permanent link">&para;</a></h4>
-<p><strong>Problem:</strong> Database schema changes break CDC.</p>
-<p><strong>Solution:</strong>
-- Schema registry
-- Backward-compatible changes
-- Versioned schemas</p>
-<h4 id="challenge-3-transaction-consistency">Challenge 3: Transaction Consistency<a class="headerlink" href="#challenge-3-transaction-consistency" title="Permanent link">&para;</a></h4>
-<p><strong>Problem:</strong> Need to maintain transaction boundaries.</p>
-<p><strong>Solution:</strong>
-- Use transaction-aware CDC tools
-- Process transactions atomically
-- Handle partial transactions</p>
-<h3 id="cost-considerations">Cost Considerations<a class="headerlink" href="#cost-considerations" title="Permanent link">&para;</a></h3>
-<p><strong>CDC costs:</strong>
-- Infrastructure (Kafka, compute)
-- Storage (change events)
-- Processing (transformation)</p>
-<p><strong>Optimization:</strong>
-- Filter unnecessary changes
-- Compress change events
-- Archive old changes</p>
+<h4 id="how-agentic-platforms-differ">How Agentic Platforms Differ<a class="headerlink" href="#how-agentic-platforms-differ" title="Permanent link">&para;</a></h4>
+<p><strong>Traditional (Passive) Platforms:</strong>
+- Manual pipeline creation
+- Reactive issue detection
+- Human-driven optimization
+- Central team bottleneck
+- High operational burden</p>
+<p><strong>Agentic Platforms:</strong>
+- Self-serve pipeline generation
+- Proactive issue detection and resolution
+- Automated optimization
+- Domain autonomy with guardrails
+- Low operational burden</p>
+<p><strong>Real-world example:</strong></p>
+<p>A payment events pipeline starts experiencing increased latency. In a passive platform:
+- Day 1: Users report slow dashboards
+- Day 2: Platform team investigates
+- Day 3: Root cause identified (partition skew)
+- Day 4: Manual fix applied
+- <strong>Total impact</strong>: 3 days of degraded service</p>
+<p>In an agentic platform:
+- Hour 1: System detects latency increase
+- Hour 2: Automatic analysis identifies partition skew
+- Hour 3: System applies fix (repartitioning)
+- Hour 4: Verification and alert to team
+- <strong>Total impact</strong>: 4 hours, minimal user impact</p>
+<h4 id="autonomy-automation-and-feedback-loops">Autonomy, Automation, and Feedback Loops<a class="headerlink" href="#autonomy-automation-and-feedback-loops" title="Permanent link">&para;</a></h4>
+<p><strong>Three pillars of agentic platforms:</strong></p>
+<ol>
+<li><strong>Autonomy</strong> - Systems make decisions within defined boundaries</li>
+<li><strong>Automation</strong> - Repetitive tasks handled automatically</li>
+<li><strong>Feedback Loops</strong> - Systems learn and improve from outcomes</li>
+</ol>
+<p><strong>Feedback loop example:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Pipeline Failure
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>    ↓
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>Root Cause Analysis (automated)
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    ↓
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>Pattern Detection (learned)
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    ↓
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Preventive Action (autonomous)
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    ↓
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>Success Validation
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>    ↓
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>Pattern Refinement (learning)
+</span></code></pre></div>
+<p><strong>Impact:</strong>
+- <strong>MTTR</strong>: Reduced from hours to minutes
+- <strong>Prevention</strong>: 70-80% of issues prevented before they occur
+- <strong>Learning</strong>: System gets better over time</p>
+<h4 id="data-zones-ownership-and-governance">Data Zones: Ownership and Governance<a class="headerlink" href="#data-zones-ownership-and-governance" title="Permanent link">&para;</a></h4>
+<p><strong>Data Zones</strong> are logical boundaries that organize data by:
+- <strong>Ownership</strong> - Who is responsible
+- <strong>Purpose</strong> - What it's used for
+- <strong>Governance</strong> - What rules apply
+- <strong>Lifecycle</strong> - How it evolves</p>
+<p><strong>Four core zones:</strong></p>
+<h5 id="1-raw-zone">1. Raw Zone<a class="headerlink" href="#1-raw-zone" title="Permanent link">&para;</a></h5>
+<p><strong>Purpose</strong>: Preserve source data exactly as received</p>
+<p><strong>Characteristics:</strong>
+- Immutable (append-only)
+- Long retention (7 years)
+- Schema-on-read
+- Minimal transformation</p>
+<p><strong>Ownership</strong>: Platform team (infrastructure), Source team (data quality)</p>
+<p><strong>Governance</strong>: Contracts, schema validation, retention policies</p>
+<h5 id="2-curated-zone">2. Curated Zone<a class="headerlink" href="#2-curated-zone" title="Permanent link">&para;</a></h5>
+<p><strong>Purpose</strong>: Cleaned, validated, enriched data ready for analysis</p>
+<p><strong>Characteristics:</strong>
+- Schema-on-write
+- Quality checks applied
+- Enriched with reference data
+- Optimized for queries</p>
+<p><strong>Ownership</strong>: Domain teams (business logic), Platform team (infrastructure)</p>
+<p><strong>Governance</strong>: Quality SLAs, freshness requirements, access control</p>
+<h5 id="3-processed-zone">3. Processed Zone<a class="headerlink" href="#3-processed-zone" title="Permanent link">&para;</a></h5>
+<p><strong>Purpose</strong>: Aggregated, transformed data for specific use cases</p>
+<p><strong>Characteristics:</strong>
+- Pre-computed aggregations
+- Denormalized structures
+- Optimized for specific queries
+- Shorter retention</p>
+<p><strong>Ownership</strong>: Consumer teams (analytics, ML)</p>
+<p><strong>Governance</strong>: Usage-based optimization, cost attribution</p>
+<h5 id="4-feature-ai-zone">4. Feature / AI Zone<a class="headerlink" href="#4-feature-ai-zone" title="Permanent link">&para;</a></h5>
+<p><strong>Purpose</strong>: Data prepared for ML and AI workloads</p>
+<p><strong>Characteristics:</strong>
+- Feature stores
+- Point-in-time correctness
+- Low-latency serving
+- Versioned features</p>
+<p><strong>Ownership</strong>: ML teams, Platform team (infrastructure)</p>
+<p><strong>Governance</strong>: Feature contracts, model lineage, serving SLAs</p>
+<p><strong>Zone flow:</strong></p>
+<pre class="mermaid"><code>graph LR
+    A[Source Systems] --&gt; B[Raw Zone&lt;br/&gt;Immutable&lt;br/&gt;Long Retention]
+    B --&gt; C[Curated Zone&lt;br/&gt;Validated&lt;br/&gt;Enriched]
+    C --&gt; D[Processed Zone&lt;br/&gt;Aggregated&lt;br/&gt;Optimized]
+    C --&gt; E[Feature/AI Zone&lt;br/&gt;ML-Ready&lt;br/&gt;Served]
+
+    style B fill:#b2dfdb
+    style C fill:#80deea
+    style D fill:#90caf9
+    style E fill:#64b5f6</code></pre>
+<p><strong>Data zones clarify ownership and governance.</strong></p>
+<h4 id="domain-ownership-at-scale">Domain Ownership at Scale<a class="headerlink" href="#domain-ownership-at-scale" title="Permanent link">&para;</a></h4>
+<p><strong>The challenge:</strong></p>
+<p>As organizations grow, centralized data teams become bottlenecks. Every new pipeline requires platform team involvement, creating:
+- 4-6 week wait times
+- Shadow systems
+- Inconsistent patterns
+- High operational burden</p>
+<p><strong>The solution: Domain ownership with guardrails</strong></p>
+<p><strong>Platform team provides:</strong>
+- Infrastructure (Kafka, storage, compute)
+- Standard patterns (paved paths)
+- Self-serve tooling
+- Governance framework</p>
+<p><strong>Domain teams own:</strong>
+- Business logic
+- Transformations
+- Data quality
+- Cost optimization</p>
+<p><strong>Guardrails ensure:</strong>
+- Contracts enforced (schema, SLAs)
+- Cost attribution (showback)
+- Quality standards (automated)
+- Security policies (automated)</p>
+<p><strong>Real-world example:</strong></p>
+<p>A 500-engineer company with centralized data team:
+- <strong>Before</strong>: 4-week wait for new pipelines, 200+ pipelines, 3 different patterns
+- <strong>After</strong>: Self-serve platform, 2-hour onboarding, 90%+ standard patterns</p>
+<p><strong>Impact:</strong>
+- <strong>Velocity</strong>: 10x faster pipeline creation
+- <strong>Consistency</strong>: 90%+ use standard patterns
+- <strong>Scale</strong>: Platform team doesn't bottleneck
+- <strong>Ownership</strong>: Domains accountable for their data</p>
+<div class="admonition success">
+<p class="admonition-title">For Managers</p>
+<p>Domain ownership with guardrails enables teams to move fast while maintaining platform consistency and governance.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">For Directors</p>
+<p>Domain ownership is the only sustainable model at scale. Centralized teams become bottlenecks beyond 50-100 engineers.</p>
+</div>
+<h4 id="concrete-examples">Concrete Examples<a class="headerlink" href="#concrete-examples" title="Permanent link">&para;</a></h4>
+<h5 id="self-healing-pipelines">Self-Healing Pipelines<a class="headerlink" href="#self-healing-pipelines" title="Permanent link">&para;</a></h5>
+<p><strong>Problem</strong>: Pipeline fails due to transient network issue.</p>
+<p><strong>Traditional approach</strong>: Alert fires, engineer investigates, manually restarts.</p>
+<p><strong>Agentic approach</strong>: 
+- System detects failure
+- Analyzes error (network timeout)
+- Waits for backoff period
+- Automatically retries
+- Escalates only if retries fail</p>
+<p><strong>Impact</strong>: 80% of transient failures resolved automatically.</p>
+<h5 id="drift-detection">Drift Detection<a class="headerlink" href="#drift-detection" title="Permanent link">&para;</a></h5>
+<p><strong>Problem</strong>: Source schema changes break downstream.</p>
+<p><strong>Traditional approach</strong>: Downstream breaks, users report, investigation, fix.</p>
+<p><strong>Agentic approach</strong>:
+- System monitors schema continuously
+- Detects drift immediately
+- Validates against contract
+- Rejects if breaking change
+- Alerts owner for review
+- Prevents bad data from entering platform</p>
+<p><strong>Impact</strong>: 99% reduction in schema drift incidents.</p>
+<h5 id="domain-owned-data-products">Domain-Owned Data Products<a class="headerlink" href="#domain-owned-data-products" title="Permanent link">&para;</a></h5>
+<p><strong>Problem</strong>: Analytics team needs user behavior data.</p>
+<p><strong>Traditional approach</strong>: Request to platform team, 4-week wait, manual pipeline creation.</p>
+<p><strong>Agentic approach</strong>:
+- Analytics team uses self-serve tool
+- System generates pipeline from contract
+- Sets up monitoring automatically
+- Provisions resources
+- Pipeline live in 2 hours</p>
+<p><strong>Impact</strong>: 10x faster time to value.</p>
+<hr />
+<h3 id="platform-maturity-evolution_1">Platform Maturity Evolution<a class="headerlink" href="#platform-maturity-evolution_1" title="Permanent link">&para;</a></h3>
+<h4 id="stage-1-manual">Stage 1: Manual<a class="headerlink" href="#stage-1-manual" title="Permanent link">&para;</a></h4>
+<p><strong>Characteristics:</strong>
+- Manual pipeline creation
+- Reactive issue detection
+- Human-driven optimization
+- High operational burden</p>
+<p><strong>KTLO</strong>: 80% of team time</p>
+<h4 id="stage-2-automated">Stage 2: Automated<a class="headerlink" href="#stage-2-automated" title="Permanent link">&para;</a></h4>
+<p><strong>Characteristics:</strong>
+- Self-serve pipeline creation
+- Automated monitoring and alerting
+- Scripted optimizations
+- Medium operational burden</p>
+<p><strong>KTLO</strong>: 40% of team time</p>
+<h4 id="stage-3-agentic">Stage 3: Agentic<a class="headerlink" href="#stage-3-agentic" title="Permanent link">&para;</a></h4>
+<p><strong>Characteristics:</strong>
+- Autonomous pipeline management
+- Self-healing systems
+- Self-optimizing infrastructure
+- Low operational burden</p>
+<p><strong>KTLO</strong>: 10-20% of team time</p>
+<p><strong>Evolution path:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Manual → Automated → Agentic
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  ↓         ↓          ↓
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>High      Medium      Low
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>KTLO      KTLO        KTLO
+</span></code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">For Directors</p>
+<p>Agentic platforms free 60-80% of platform team time for strategic work, not operational firefighting.</p>
+</div>
+<hr />
+<h3 id="organizational-implications_1">Organizational Implications<a class="headerlink" href="#organizational-implications_1" title="Permanent link">&para;</a></h3>
+<h4 id="for-platform-teams">For Platform Teams<a class="headerlink" href="#for-platform-teams" title="Permanent link">&para;</a></h4>
+<p><strong>Shift from:</strong>
+- Building pipelines → Building platforms
+- Manual operations → Automated systems
+- Reactive support → Proactive capabilities</p>
+<p><strong>New focus:</strong>
+- Self-serve tooling
+- Autonomous systems
+- Domain enablement
+- Strategic capabilities</p>
+<h4 id="for-domain-teams">For Domain Teams<a class="headerlink" href="#for-domain-teams" title="Permanent link">&para;</a></h4>
+<p><strong>Gain:</strong>
+- Self-serve capabilities
+- Faster time to value
+- Ownership and autonomy
+- Better tooling</p>
+<p><strong>Responsibility:</strong>
+- Data quality
+- Cost optimization
+- Business logic
+- Compliance</p>
+<h4 id="for-leadership">For Leadership<a class="headerlink" href="#for-leadership" title="Permanent link">&para;</a></h4>
+<p><strong>Metrics to track:</strong>
+- Time to value (target: &lt; 1 day)
+- Self-serve adoption (target: 80%+)
+- KTLO reduction (target: 60%+)
+- Platform reliability (target: 99.9%+)</p>
+<p><strong>Investment areas:</strong>
+- Self-serve tooling
+- Automation infrastructure
+- Domain enablement
+- Observability and lineage</p>
+<hr />
 <h3 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong><a href="../batch-vs-streaming/">Batch vs Streaming</a></strong> - Other ingestion patterns</li>
-<li><strong><a href="../../data-architecture/">Data Architecture</a></strong> - How to store CDC data</li>
-<li><strong><a href="../../data-quality/">Data Quality</a></strong> - Ensuring CDC data quality</li>
+<li><strong><a href="../reference/future-trends/">Future Trends</a></strong> - Emerging technologies and patterns, including agentic platforms</li>
+<li><strong><a href="../data-engineering/platform-operating-model/">Platform &amp; Operating Model</a></strong> - Current operating models</li>
+<li><strong><a href="../reference/leadership-view/">Leadership View</a></strong> - Measuring platform success</li>
+<li><strong><a href="../data-ingestion/strategic-guidelines/">Strategic Guidelines</a></strong> - Ingestion strategies</li>
+<li><strong><a href="../data-architecture/ingestion-architecture/">Ingestion Architecture</a></strong> - Technical implementation of agentic controls</li>
 </ul>
 <hr />
-<p><strong>Next</strong>: <a href="../push-vs-pull/">Push vs Pull →</a></p>
+<p><strong>Next</strong>: <a href="../reference/future-trends/">Future Trends →</a></p>
 
 
 
@@ -2842,7 +2937,7 @@ Poll for changes using timestamps or version columns.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 10:29:16 UTC"><span class="timeago" datetime="2025-12-29T10:29:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 10:29:16 UTC">2025-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 17:54:26 UTC"><span class="timeago" datetime="2025-12-29T17:54:26+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 17:54:26 UTC">2025-12-29</span>
   </span>
 
     
@@ -2852,7 +2947,7 @@ Poll for changes using timestamps or version columns.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 10:29:16 UTC"><span class="timeago" datetime="2025-12-29T10:29:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 10:29:16 UTC">2025-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 17:54:26 UTC"><span class="timeago" datetime="2025-12-29T17:54:26+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 17:54:26 UTC">2025-12-29</span>
   </span>
 
     
@@ -2942,14 +3037,14 @@ Poll for changes using timestamps or version columns.</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.sidebar", "navigation.path", "search.suggest", "search.highlight", "search.share", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.top", "navigation.indexes", "navigation.sidebar", "navigation.path", "search.suggest", "search.highlight", "search.share", "content.code.annotate", "content.code.copy", "content.tabs.link", "content.tooltips"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
-        <script src="../../js/timeago.min.js"></script>
+        <script src="../js/timeago.min.js"></script>
       
-        <script src="../../js/timeago_mkdocs_material.js"></script>
+        <script src="../js/timeago_mkdocs_material.js"></script>
       
     
   </body>
