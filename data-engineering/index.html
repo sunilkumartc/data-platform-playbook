@@ -1918,6 +1918,94 @@
 <p>Traditional data engineering focused on <strong>ETL pipelines</strong>—point-to-point data movement. Modern data engineering is about <strong>platforms</strong>—self-serve infrastructure that enables teams.</p>
 </div>
 <h4 id="platform-capabilities">Platform Capabilities<a class="headerlink" href="#platform-capabilities" title="Permanent link">&para;</a></h4>
+<pre class="mermaid"><code>graph TB
+    subgraph "1. Ingestion &amp; Integration"
+        I1[Batch Ingestion&lt;br/&gt;Scheduled Extracts&lt;br/&gt;Full/Incremental]
+        I2[Streaming Ingestion&lt;br/&gt;Real-time Events&lt;br/&gt;Message Queues]
+        I3[Change Data Capture&lt;br/&gt;Database Replication&lt;br/&gt;Transaction Logs]
+        I4[Schema Validation&lt;br/&gt;Contract Enforcement&lt;br/&gt;Data Contracts]
+    end
+
+    subgraph "2. Compute &amp; Processing"
+        C1[Managed Spark&lt;br/&gt;Batch Processing&lt;br/&gt;Distributed Compute]
+        C2[Stream Processing&lt;br/&gt;Flink, Kafka Streams&lt;br/&gt;Real-time Transforms]
+        C3[SQL Engines&lt;br/&gt;Presto, BigQuery&lt;br/&gt;Ad-hoc Queries]
+        C4[Auto-scaling&lt;br/&gt;Resource Management&lt;br/&gt;Cost Optimization]
+    end
+
+    subgraph "3. Storage &amp; Data Management"
+        S1[Raw Storage&lt;br/&gt;Data Lake&lt;br/&gt;Object Storage]
+        S2[Curated Storage&lt;br/&gt;Warehouse/Lakehouse&lt;br/&gt;Optimized Formats]
+        S3[Multi-tier Storage&lt;br/&gt;Hot/Warm/Cold&lt;br/&gt;Lifecycle Policies]
+        S4[Data Versioning&lt;br/&gt;Time Travel&lt;br/&gt;ACID Transactions]
+    end
+
+    subgraph "4. Discovery &amp; Governance"
+        D1[Metadata Catalog&lt;br/&gt;Data Discovery&lt;br/&gt;Schema Registry]
+        D2[Lineage Tracking&lt;br/&gt;Data Flow&lt;br/&gt;Dependencies]
+        D3[Ownership Models&lt;br/&gt;Access Control&lt;br/&gt;Data Classification]
+        D4[Compliance&lt;br/&gt;Audit Logging&lt;br/&gt;Privacy Controls]
+    end
+
+    subgraph "5. Operations &amp; Reliability"
+        O1[Observability&lt;br/&gt;Metrics &amp; Logs&lt;br/&gt;Distributed Tracing]
+        O2[Alerting&lt;br/&gt;SLA Monitoring&lt;br/&gt;Anomaly Detection]
+        O3[Incident Management&lt;br/&gt;Root Cause Analysis&lt;br/&gt;Automated Recovery]
+        O4[Performance Monitoring&lt;br/&gt;Query Optimization&lt;br/&gt;Cost Attribution]
+    end
+
+    I1 --&gt; C1
+    I2 --&gt; C2
+    I3 --&gt; C1
+    I4 --&gt; I1
+    I4 --&gt; I2
+    I4 --&gt; I3
+
+    C1 --&gt; S1
+    C2 --&gt; S1
+    C3 --&gt; S2
+    C4 --&gt; C1
+    C4 --&gt; C2
+
+    S1 --&gt; S2
+    S2 --&gt; S3
+    S3 --&gt; S4
+
+    S1 --&gt; D1
+    S2 --&gt; D1
+    D1 --&gt; D2
+    D2 --&gt; D3
+    D3 --&gt; D4
+
+    C1 --&gt; O1
+    C2 --&gt; O1
+    S1 --&gt; O1
+    S2 --&gt; O1
+    O1 --&gt; O2
+    O2 --&gt; O3
+    O3 --&gt; O4
+
+    style I1 fill:#80deea
+    style I2 fill:#80deea
+    style I3 fill:#80deea
+    style I4 fill:#4dd0e1
+    style C1 fill:#80deea
+    style C2 fill:#80deea
+    style C3 fill:#80deea
+    style C4 fill:#4dd0e1
+    style S1 fill:#b2dfdb
+    style S2 fill:#b2dfdb
+    style S3 fill:#b2dfdb
+    style S4 fill:#80cbc4
+    style D1 fill:#90caf9
+    style D2 fill:#90caf9
+    style D3 fill:#90caf9
+    style D4 fill:#64b5f6
+    style O1 fill:#80deea
+    style O2 fill:#80deea
+    style O3 fill:#80deea
+    style O4 fill:#4dd0e1</code></pre>
+<p><strong>Production-grade platform capabilities organized by functional area with clear component segregation.</strong></p>
 <p>A mature data platform provides integrated capabilities across the data lifecycle:</p>
 <p><strong>Ingestion &amp; Integration</strong> — Standardized patterns for batch, streaming, and CDC ingestion with schema validation and contract enforcement</p>
 <p><strong>Compute &amp; Processing</strong> — Managed compute environments (Spark, Flink, Dataflow) with auto-scaling and standardized transformation frameworks</p>
@@ -2007,7 +2095,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 10:29:16 UTC"><span class="timeago" datetime="2025-12-29T10:29:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 10:29:16 UTC">2025-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 11:11:38 UTC"><span class="timeago" datetime="2025-12-29T11:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 11:11:38 UTC">2025-12-29</span>
   </span>
 
     

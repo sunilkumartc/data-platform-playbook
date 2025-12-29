@@ -2847,6 +2847,20 @@
 - Flexible ingestion (lake) + optimized serving (warehouse)</p>
 <p><strong>Implementation</strong>: Delta Lake, Iceberg, Hudi on object storage</p>
 <h3 id="storage-tiers">Storage Tiers<a class="headerlink" href="#storage-tiers" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph LR
+    A[Data Ingestion] --&gt; B[Hot Storage&lt;br/&gt;Active Queries&lt;br/&gt;High Cost]
+    B --&gt;|30 days| C[Warm Storage&lt;br/&gt;Occasional Access&lt;br/&gt;Medium Cost]
+    C --&gt;|90 days| D[Cold Storage&lt;br/&gt;Archive/Compliance&lt;br/&gt;Low Cost]
+
+    E[Lifecycle Policy] -.Manages.-&gt; B
+    E -.Manages.-&gt; C
+    E -.Manages.-&gt; D
+
+    style B fill:#ffccbc
+    style C fill:#fff9c4
+    style D fill:#c8e6c9
+    style E fill:#90caf9</code></pre>
+<p><strong>Automated lifecycle management moving data to cost-appropriate tiers.</strong></p>
 <h4 id="hot-storage">Hot Storage<a class="headerlink" href="#hot-storage" title="Permanent link">&para;</a></h4>
 <p><strong>Use case</strong>: Active queries, dashboards, real-time analytics</p>
 <p><strong>Characteristics:</strong>
@@ -3252,7 +3266,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 09:22:57 UTC"><span class="timeago" datetime="2025-12-29T09:22:57+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 09:22:57 UTC">2025-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 11:11:38 UTC"><span class="timeago" datetime="2025-12-29T11:11:38+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 11:11:38 UTC">2025-12-29</span>
   </span>
 
     
