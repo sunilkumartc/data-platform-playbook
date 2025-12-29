@@ -88,6 +88,7 @@ nav:
     - Batch vs Streaming: data-ingestion/batch-vs-streaming.md
     - Change Data Capture: data-ingestion/cdc.md
     - Push vs Pull: data-ingestion/push-vs-pull.md
+    - Strategic Guidelines: data-ingestion/strategic-guidelines.md
   - Data Architecture:
     - Data Architecture: data-architecture/index.md
     - Storage: data-architecture/storage.md

@@ -50,6 +50,19 @@ Source-initiated vs platform-initiated ingestion.
 - Implementation patterns
 - Error handling
 
+### [Strategic Guidelines & Future Thinking](strategic-guidelines.md)
+Strategic approaches to building ingestion systems that scale and evolve.
+
+**Learn about:**
+- Contracts before pipelines
+- Paved paths over pipeline sprawl
+- Freshness as first-class SLO
+- Cost-aware ingestion design
+- Lineage and observability
+- Legacy migration strategies
+- Domain autonomy patterns
+- Future-proofing for AI-assisted ingestion
+
 ## Ingestion Patterns
 
 ```mermaid
