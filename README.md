@@ -78,53 +78,6 @@ This playbook is built on these core principles:
 
 The playbook is hosted on GitHub Pages: **[https://sunilkumartc.github.io/data-platform-playbook/](https://sunilkumartc.github.io/data-platform-playbook/)**
 
-### Local Development
-
-1. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-2. **Serve locally:**
-   ```bash
-   mkdocs serve
-   ```
-   Then open http://127.0.0.1:8000 in your browser.
-
-3. **Build static site:**
-   ```bash
-   mkdocs build
-   ```
-
-### Deployment
-
-The site is automatically deployed to GitHub Pages via GitHub Actions when you push to the `main` branch.
-
-**If changes don't appear on GitHub Pages:**
-
-1. **Check GitHub Actions**: Go to your repo → Actions tab → Check if the workflow ran successfully
-2. **Manual trigger**: Go to Actions → "Deploy MkDocs" → "Run workflow" → Select main branch
-3. **Clear browser cache**: Hard refresh (Ctrl+Shift+R or Cmd+Shift+R) or use incognito mode
-4. **Check GitHub Pages settings**: Repo → Settings → Pages → Source should be "Deploy from a branch" → Branch: `gh-pages` → Folder: `/ (root)`
-5. **Wait a few minutes**: GitHub Pages can take 1-5 minutes to update after deployment
-
-## 📁 Project Structure
-
-```
-data-platform-playbook/
-├── docs/                    # Documentation source files
-│   ├── index.md            # Home page
-│   ├── 01-foundations.md   # Core concepts
-│   ├── 02-lifecycle.md     # Data lifecycle
-│   └── ...                 # Other chapters
-├── .github/
-│   └── workflows/
-│       └── ci.yml          # GitHub Actions workflow
-├── mkdocs.yml              # MkDocs configuration
-├── requirements.txt        # Python dependencies
-└── README.md              # This file
-```
-
 ## 🎨 Features
 
 - **Material Design** - Beautiful, modern UI with dark mode support
