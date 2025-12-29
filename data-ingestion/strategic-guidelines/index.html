@@ -12,13 +12,13 @@
         <meta name="author" content="Sunil Kumar T C">
       
       
-        <link rel="canonical" href="https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/cdc/">
+        <link rel="canonical" href="https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/strategic-guidelines/">
       
       
-        <link rel="prev" href="../batch-vs-streaming/">
+        <link rel="prev" href="../push-vs-pull/">
       
       
-        <link rel="next" href="../push-vs-pull/">
+        <link rel="next" href="../../data-architecture/">
       
       
         
@@ -29,7 +29,7 @@
     
     
       
-        <title>Change Data Capture - Data Platform Playbook</title>
+        <title>Strategic Guidelines - Data Platform Playbook</title>
       
     
     
@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#change-data-capture-cdc" class="md-skip">
+        <a href="#strategic-guidelines-future-thinking" class="md-skip">
           Skip to content
         </a>
       
@@ -132,7 +132,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Change Data Capture
+              Strategic Guidelines
             
           </span>
         </div>
@@ -845,35 +845,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Change Data Capture
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../cdc/" class="md-nav__link">
         
   
   
@@ -889,374 +864,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#change-data-capture-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Change Data Capture (CDC)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Change Data Capture (CDC)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#overview" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Overview
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#why-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Why CDC?
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Why CDC?">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#problems-with-traditional-approaches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Problems with Traditional Approaches
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cdc-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CDC Patterns
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CDC Patterns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-log-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Log-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-trigger-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Trigger-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-query-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Query-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cdc-tools" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CDC Tools
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CDC Tools">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#debezium" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Debezium
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#google-datastream" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Google Datastream
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aws-dms" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AWS DMS
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cdc-current-state-patterns" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CDC + Current State Patterns
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="CDC + Current State Patterns">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Problem
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-1-merge-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 1: Merge Pattern
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-2-snapshot-incremental" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 2: Snapshot + Incremental
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-3-event-sourcing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 3: Event Sourcing
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#implementation-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Implementation Best Practices
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Implementation Best Practices">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#1-handle-transaction-boundaries" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Handle Transaction Boundaries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-handle-schema-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Handle Schema Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-handle-failures" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Handle Failures
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-monitor-lag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Monitor Lag
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#common-challenges" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Common Challenges
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Common Challenges">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#challenge-1-high-volume-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 1: High-Volume Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-2-schema-evolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 2: Schema Evolution
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-3-transaction-consistency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 3: Transaction Consistency
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#cost-considerations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Cost Considerations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#related-topics" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Related Topics
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1294,10 +901,35 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../strategic-guidelines/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Strategic Guidelines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1313,6 +945,309 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#strategic-guidelines-future-thinking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Strategic Guidelines &amp; Future Thinking
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Strategic Guidelines &amp; Future Thinking">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#who-this-is-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Who This Is For
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-shift-left-contracts-before-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Shift Left: Contracts Before Pipelines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Shift Left: Contracts Before Pipelines">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-paved-paths-over-a-pipeline-zoo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Paved Paths Over a Pipeline Zoo
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Paved Paths Over a Pipeline Zoo">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-freshness-as-a-first-class-slo" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Freshness as a First-Class SLO
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. Freshness as a First-Class SLO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-cost-aware-ingestion-by-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Cost-Aware Ingestion by Design
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. Cost-Aware Ingestion by Design">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-default-lineage-not-optional-lineage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Default Lineage, Not Optional Lineage
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5. Default Lineage, Not Optional Lineage">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-legacy-decommissioning-by-replacement-not-force" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Legacy Decommissioning by Replacement, Not Force
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6. Legacy Decommissioning by Replacement, Not Force">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-domain-autonomy-with-guardrails" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Domain Autonomy with Guardrails
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Domain Autonomy with Guardrails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-preparing-for-agentic-automated-ingestion-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Preparing for Agentic / Automated Ingestion Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Preparing for Agentic / Automated Ingestion Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-References
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#key-takeaways" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Key Takeaways
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2077,15 +2012,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#change-data-capture-cdc" class="md-nav__link">
+  <a href="#strategic-guidelines-future-thinking" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Change Data Capture (CDC)
+        Strategic Guidelines &amp; Future Thinking
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Change Data Capture (CDC)">
+    <nav class="md-nav" aria-label="Strategic Guidelines &amp; Future Thinking">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2100,22 +2035,33 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#why-cdc" class="md-nav__link">
+  <a href="#who-this-is-for" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Why CDC?
+        Who This Is For
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Why CDC?">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#1-shift-left-contracts-before-pipelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Shift Left: Contracts Before Pipelines
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Shift Left: Contracts Before Pipelines">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#problems-with-traditional-approaches" class="md-nav__link">
+  <a href="#what-problem-this-solves" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problems with Traditional Approaches
+        What Problem This Solves
       
     </span>
   </a>
@@ -2128,44 +2074,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cdc-patterns" class="md-nav__link">
+  <a href="#2-paved-paths-over-a-pipeline-zoo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CDC Patterns
+        2. Paved Paths Over a Pipeline Zoo
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="CDC Patterns">
+    <nav class="md-nav" aria-label="2. Paved Paths Over a Pipeline Zoo">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-log-based-cdc" class="md-nav__link">
+  <a href="#what-problem-this-solves_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Log-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-trigger-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Trigger-Based CDC
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-query-based-cdc" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Query-Based CDC
+        What Problem This Solves
       
     </span>
   </a>
@@ -2178,44 +2102,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cdc-tools" class="md-nav__link">
+  <a href="#3-freshness-as-a-first-class-slo" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CDC Tools
+        3. Freshness as a First-Class SLO
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="CDC Tools">
+    <nav class="md-nav" aria-label="3. Freshness as a First-Class SLO">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#debezium" class="md-nav__link">
+  <a href="#what-problem-this-solves_2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Debezium
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#google-datastream" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Google Datastream
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#aws-dms" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        AWS DMS
+        What Problem This Solves
       
     </span>
   </a>
@@ -2228,55 +2130,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cdc-current-state-patterns" class="md-nav__link">
+  <a href="#4-cost-aware-ingestion-by-design" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CDC + Current State Patterns
+        4. Cost-Aware Ingestion by Design
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="CDC + Current State Patterns">
+    <nav class="md-nav" aria-label="4. Cost-Aware Ingestion by Design">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#problem" class="md-nav__link">
+  <a href="#what-problem-this-solves_3" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Problem
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-1-merge-pattern" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 1: Merge Pattern
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-2-snapshot-incremental" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 2: Snapshot + Incremental
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#solution-3-event-sourcing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Solution 3: Event Sourcing
+        What Problem This Solves
       
     </span>
   </a>
@@ -2289,55 +2158,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#implementation-best-practices" class="md-nav__link">
+  <a href="#5-default-lineage-not-optional-lineage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Implementation Best Practices
+        5. Default Lineage, Not Optional Lineage
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Implementation Best Practices">
+    <nav class="md-nav" aria-label="5. Default Lineage, Not Optional Lineage">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#1-handle-transaction-boundaries" class="md-nav__link">
+  <a href="#what-problem-this-solves_4" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Handle Transaction Boundaries
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#2-handle-schema-changes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Handle Schema Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#3-handle-failures" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. Handle Failures
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#4-monitor-lag" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Monitor Lag
+        What Problem This Solves
       
     </span>
   </a>
@@ -2350,44 +2186,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#common-challenges" class="md-nav__link">
+  <a href="#6-legacy-decommissioning-by-replacement-not-force" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Common Challenges
+        6. Legacy Decommissioning by Replacement, Not Force
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Common Challenges">
+    <nav class="md-nav" aria-label="6. Legacy Decommissioning by Replacement, Not Force">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#challenge-1-high-volume-changes" class="md-nav__link">
+  <a href="#what-problem-this-solves_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Challenge 1: High-Volume Changes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-2-schema-evolution" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 2: Schema Evolution
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#challenge-3-transaction-consistency" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Challenge 3: Transaction Consistency
+        What Problem This Solves
       
     </span>
   </a>
@@ -2400,10 +2214,66 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#cost-considerations" class="md-nav__link">
+  <a href="#7-domain-autonomy-with-guardrails" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Cost Considerations
+        7. Domain Autonomy with Guardrails
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="7. Domain Autonomy with Guardrails">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-preparing-for-agentic-automated-ingestion-systems" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Preparing for Agentic / Automated Ingestion Systems
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="8. Preparing for Agentic / Automated Ingestion Systems">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-problem-this-solves_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Problem This Solves
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-references" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-References
       
     </span>
   </a>
@@ -2411,10 +2281,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#related-topics" class="md-nav__link">
+  <a href="#key-takeaways" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Related Topics
+        Key Takeaways
       
     </span>
   </a>
@@ -2494,217 +2364,497 @@
   
 
 
-  <h1>Change Data Capture</h1>
+  <h1>Strategic Guidelines</h1>
 
-<h2 id="change-data-capture-cdc">Change Data Capture (CDC)<a class="headerlink" href="#change-data-capture-cdc" title="Permanent link">&para;</a></h2>
+<h2 id="strategic-guidelines-future-thinking">Strategic Guidelines &amp; Future Thinking<a class="headerlink" href="#strategic-guidelines-future-thinking" title="Permanent link">&para;</a></h2>
 <blockquote>
-<p>Capturing database changes in real-time to maintain synchronized data across systems.</p>
+<p>"If a data problem can't be explained in one screen, the system is already broken."</p>
+</blockquote>
+<p>This section covers strategic approaches to building ingestion systems that scale, fail gracefully, and evolve with your organization. These are lessons learned from operating petabyte-scale data platforms serving hundreds of teams.</p>
+<blockquote>
+<p>"Data freshness is just trust, measured in minutes."</p>
 </blockquote>
 <h3 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">&para;</a></h3>
-<p>Change Data Capture (CDC) is a pattern for capturing and propagating changes made to a database. Instead of periodically querying for changes, CDC reads the database transaction log to capture inserts, updates, and deletes as they happen.</p>
-<h3 id="why-cdc">Why CDC?<a class="headerlink" href="#why-cdc" title="Permanent link">&para;</a></h3>
-<h4 id="problems-with-traditional-approaches">Problems with Traditional Approaches<a class="headerlink" href="#problems-with-traditional-approaches" title="Permanent link">&para;</a></h4>
-<p><strong>Full Extract:</strong>
-- ❌ Inefficient (transfers all data, even unchanged)
-- ❌ High source system load
-- ❌ Slow for large tables</p>
-<p><strong>Timestamp-based Incremental:</strong>
-- ❌ Misses deletes
-- ❌ May miss updates if timestamp not updated
-- ❌ Requires source system changes</p>
-<p><strong>CDC Solution:</strong>
-- ✅ Captures all changes (inserts, updates, deletes)
-- ✅ Low overhead (reads transaction log)
-- ✅ Real-time or near real-time
-- ✅ Maintains transaction consistency</p>
-<h3 id="cdc-patterns">CDC Patterns<a class="headerlink" href="#cdc-patterns" title="Permanent link">&para;</a></h3>
-<h4 id="1-log-based-cdc">1. Log-Based CDC<a class="headerlink" href="#1-log-based-cdc" title="Permanent link">&para;</a></h4>
-<p><strong>How it works:</strong>
-Reads database transaction logs (WAL, binlog, redo logs) to capture changes.</p>
-<p><strong>Architecture:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Database → Transaction Log → CDC Tool → Message Queue → Storage
-</span></code></pre></div></p>
-<p><strong>Pros:</strong>
-- ✅ Low overhead (doesn't query tables)
-- ✅ Captures all changes
-- ✅ Maintains transaction consistency
-- ✅ Real-time</p>
-<p><strong>Cons:</strong>
-- ❌ Requires database configuration
-- ❌ Database-specific (different for each DB)</p>
-<p><strong>Tools:</strong>
-- Debezium (Kafka Connect)
-- AWS DMS (Database Migration Service)
-- Google Datastream
-- Striim</p>
-<h4 id="2-trigger-based-cdc">2. Trigger-Based CDC<a class="headerlink" href="#2-trigger-based-cdc" title="Permanent link">&para;</a></h4>
-<p><strong>How it works:</strong>
-Database triggers write changes to a change table.</p>
-<p><strong>Architecture:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Database → Trigger → Change Table → CDC Tool → Storage
-</span></code></pre></div></p>
-<p><strong>Pros:</strong>
-- ✅ Works with any database
-- ✅ Captures all changes
-- ✅ No external tools needed</p>
-<p><strong>Cons:</strong>
-- ❌ Higher overhead (triggers on every change)
-- ❌ Requires database changes
-- ❌ May impact source system performance</p>
-<h4 id="3-query-based-cdc">3. Query-Based CDC<a class="headerlink" href="#3-query-based-cdc" title="Permanent link">&para;</a></h4>
-<p><strong>How it works:</strong>
-Poll for changes using timestamps or version columns.</p>
-<p><strong>Architecture:</strong>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>CDC Tool → Query Database → Process Changes → Storage
-</span></code></pre></div></p>
-<p><strong>Pros:</strong>
-- ✅ Simple, no database changes
-- ✅ Works with any database
-- ✅ Easy to implement</p>
-<p><strong>Cons:</strong>
-- ❌ May miss deletes
-- ❌ Polling overhead
-- ❌ Higher latency
-- ❌ May miss updates if timestamp not updated</p>
-<p><strong>When to use:</strong>
-- Legacy systems
-- Can't modify database
-- Acceptable to miss some changes</p>
-<h3 id="cdc-tools">CDC Tools<a class="headerlink" href="#cdc-tools" title="Permanent link">&para;</a></h3>
-<h4 id="debezium">Debezium<a class="headerlink" href="#debezium" title="Permanent link">&para;</a></h4>
-<p><strong>Best for:</strong> Kafka-based CDC, open source</p>
-<p><strong>Pros:</strong>
-- ✅ Open source
-- ✅ Kafka-native
-- ✅ Many database connectors
-- ✅ Reliable</p>
-<p><strong>Cons:</strong>
-- ❌ Requires Kafka infrastructure
-- ❌ Self-managed</p>
-<p><strong>Use when:</strong>
-- Already using Kafka
-- Need open source solution
-- Have operations team</p>
-<h4 id="google-datastream">Google Datastream<a class="headerlink" href="#google-datastream" title="Permanent link">&para;</a></h4>
-<p><strong>Best for:</strong> GCP-native CDC, managed service</p>
-<p><strong>Pros:</strong>
-- ✅ Managed service (no ops)
-- ✅ GCP-integrated
-- ✅ Reliable
-- ✅ Easy setup</p>
-<p><strong>Cons:</strong>
-- ❌ GCP-only
-- ❌ Expensive
-- ❌ Limited database support</p>
-<p><strong>Use when:</strong>
-- GCP stack
-- Want managed service
-- Cost acceptable</p>
-<h4 id="aws-dms">AWS DMS<a class="headerlink" href="#aws-dms" title="Permanent link">&para;</a></h4>
-<p><strong>Best for:</strong> AWS-native replication, migrations</p>
-<p><strong>Pros:</strong>
-- ✅ Managed service
-- ✅ AWS-integrated
-- ✅ Good for migrations</p>
-<p><strong>Cons:</strong>
-- ❌ AWS-only
-- ❌ Can be expensive
-- ❌ Complex configuration</p>
-<p><strong>Use when:</strong>
-- AWS stack
-- Need managed service
-- Database migrations</p>
-<h3 id="cdc-current-state-patterns">CDC + Current State Patterns<a class="headerlink" href="#cdc-current-state-patterns" title="Permanent link">&para;</a></h3>
-<h4 id="problem">Problem<a class="headerlink" href="#problem" title="Permanent link">&para;</a></h4>
-<p>CDC streams capture changes, but analytics often needs <strong>current state</strong> (latest value per key).</p>
-<h4 id="solution-1-merge-pattern">Solution 1: Merge Pattern<a class="headerlink" href="#solution-1-merge-pattern" title="Permanent link">&para;</a></h4>
-<p><strong>Merge CDC events into current state table:</strong></p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">MERGE</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="n">current_state</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">target</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="k">USING</span><span class="w"> </span><span class="n">cdc_events</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="k">source</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="k">ON</span><span class="w"> </span><span class="n">target</span><span class="p">.</span><span class="n">id</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">id</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;UPDATE&#39;</span><span class="w"> </span><span class="k">THEN</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="w">  </span><span class="k">UPDATE</span><span class="w"> </span><span class="k">SET</span><span class="w"> </span><span class="n">col1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">col1</span><span class="p">,</span><span class="w"> </span><span class="n">updated_at</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="k">timestamp</span>
-</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="k">WHEN</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;DELETE&#39;</span><span class="w"> </span><span class="k">THEN</span>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="w">  </span><span class="k">DELETE</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="k">WHEN</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="n">MATCHED</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">op</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;INSERT&#39;</span><span class="w"> </span><span class="k">THEN</span>
-</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="w">  </span><span class="k">INSERT</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">col1</span><span class="p">,</span><span class="w"> </span><span class="n">updated_at</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w"> </span><span class="p">(</span><span class="k">source</span><span class="p">.</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="n">col1</span><span class="p">,</span><span class="w"> </span><span class="k">source</span><span class="p">.</span><span class="k">timestamp</span><span class="p">)</span>
+<p>Ingestion architecture isn't just about moving data—it's about building systems that:
+- <strong>Fail predictably</strong> (not silently)
+- <strong>Scale cost-effectively</strong> (not exponentially)
+- <strong>Evolve gracefully</strong> (not break catastrophically)
+- <strong>Enable teams</strong> (not create bottlenecks)</p>
+<p>This section complements the technical patterns in <a href="../../data-architecture/ingestion-architecture/">Ingestion Architecture</a> with strategic, operational, and forward-looking guidance.</p>
+<h3 id="who-this-is-for">Who This Is For<a class="headerlink" href="#who-this-is-for" title="Permanent link">&para;</a></h3>
+<p><strong>Data Engineers</strong>: Understand why certain patterns prevent failures at scale.</p>
+<p><strong>Managers</strong>: Learn how to structure teams and processes for reliable ingestion.</p>
+<p><strong>Directors</strong>: See how strategic decisions impact platform reliability and cost.</p>
+<hr />
+<h3 id="1-shift-left-contracts-before-pipelines">1. Shift Left: Contracts Before Pipelines<a class="headerlink" href="#1-shift-left-contracts-before-pipelines" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves" title="Permanent link">&para;</a></h4>
+<p><strong>Schema drift breaking downstream systems.</strong></p>
+<p>Without contracts, you discover schema changes when pipelines fail. By then, bad data may have already propagated, causing:
+- Broken dashboards
+- Failed ML model training
+- Incorrect business metrics
+- Hours of debugging</p>
+<p><strong>Real-world example:</strong></p>
+<p>A payment service adds a new optional field <code>payment_method_details</code> to their event schema. Without contracts:
+- Day 1: Pipeline ingests successfully (field is optional)
+- Day 2: Downstream transformation assumes field doesn't exist, breaks
+- Day 3: Analytics team reports incorrect revenue numbers
+- Day 4: Root cause identified, but data already corrupted</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p>Define <strong>data contracts</strong> before ingestion begins:</p>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="c1"># Contract definition</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">payment_events</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">payments-team@company.com</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nt">sla</span><span class="p">:</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="nt">freshness</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5 minutes</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">availability</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">99.9%</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nt">schema</span><span class="p">:</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">fields</span><span class="p">:</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">payment_id</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">      </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">amount</span>
+</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">decimal</span>
+</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">      </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">payment_method_details</span>
+</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">      </span><span class="nt">type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">object</span>
+</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">      </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w">  </span><span class="c1"># New field, backward compatible</span>
+</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">  </span><span class="nt">evolution</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">backward_compatible_only</span>
+</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nt">quality</span><span class="p">:</span>
+</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">  </span><span class="nt">completeness</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;</span><span class="err"> 99%</span>
+</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="w">  </span><span class="nt">uniqueness</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">&gt;</span><span class="err"> 99.9%</span>
 </span></code></pre></div>
-<p><strong>Tools:</strong> Spark, Flink, BigQuery MERGE</p>
-<h4 id="solution-2-snapshot-incremental">Solution 2: Snapshot + Incremental<a class="headerlink" href="#solution-2-snapshot-incremental" title="Permanent link">&para;</a></h4>
-<p><strong>Periodic snapshots + incremental updates:</strong></p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1">-- Daily snapshot</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="n">current_state_2024_01_15</span><span class="w"> </span><span class="k">AS</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">current_state_2024_01_14</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">cdc_events</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="k">WHERE</span><span class="w"> </span><span class="nb">date</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;2024-01-15&#39;</span>
-</span></code></pre></div>
-<p><strong>Pros:</strong> Simple, easy to reprocess<br />
-<strong>Cons:</strong> Storage overhead, slower queries</p>
-<h4 id="solution-3-event-sourcing">Solution 3: Event Sourcing<a class="headerlink" href="#solution-3-event-sourcing" title="Permanent link">&para;</a></h4>
-<p><strong>Store all events, compute current state on read:</strong></p>
-<div class="language-sql highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1">-- Current state = latest event per key</span>
-</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">SELECT</span><span class="w"> </span><span class="k">DISTINCT</span><span class="w"> </span><span class="k">ON</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">)</span><span class="w"> </span><span class="o">*</span>
-</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="k">FROM</span><span class="w"> </span><span class="n">events</span>
-</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="k">timestamp</span><span class="w"> </span><span class="k">DESC</span>
-</span></code></pre></div>
-<p><strong>Pros:</strong> Full history, audit trail<br />
-<strong>Cons:</strong> Expensive queries, complex logic</p>
-<div class="admonition tip">
-<p class="admonition-title">Recommendation</p>
-<p>Use merge pattern for most cases. It's efficient and maintains current state.</p>
-</div>
-<h3 id="implementation-best-practices">Implementation Best Practices<a class="headerlink" href="#implementation-best-practices" title="Permanent link">&para;</a></h3>
-<h4 id="1-handle-transaction-boundaries">1. Handle Transaction Boundaries<a class="headerlink" href="#1-handle-transaction-boundaries" title="Permanent link">&para;</a></h4>
-<p>CDC should maintain transaction consistency. Process all changes in a transaction together.</p>
-<h4 id="2-handle-schema-changes">2. Handle Schema Changes<a class="headerlink" href="#2-handle-schema-changes" title="Permanent link">&para;</a></h4>
-<p>Database schema changes can break CDC. Use schema registry to handle evolution.</p>
-<h4 id="3-handle-failures">3. Handle Failures<a class="headerlink" href="#3-handle-failures" title="Permanent link">&para;</a></h4>
-<p>CDC must be resilient to failures:
-- Checkpoint progress
-- Handle duplicate events (idempotency)
-- Retry on failures</p>
-<h4 id="4-monitor-lag">4. Monitor Lag<a class="headerlink" href="#4-monitor-lag" title="Permanent link">&para;</a></h4>
-<p>Track CDC lag (time between change and processing):
-- Alert if lag &gt; threshold
-- Monitor queue depth
-- Track processing rate</p>
-<h3 id="common-challenges">Common Challenges<a class="headerlink" href="#common-challenges" title="Permanent link">&para;</a></h3>
-<h4 id="challenge-1-high-volume-changes">Challenge 1: High-Volume Changes<a class="headerlink" href="#challenge-1-high-volume-changes" title="Permanent link">&para;</a></h4>
-<p><strong>Problem:</strong> Database with millions of changes per day.</p>
-<p><strong>Solution:</strong>
-- Partition by table/date
-- Parallel processing
-- Batch processing (micro-batch)</p>
-<h4 id="challenge-2-schema-evolution">Challenge 2: Schema Evolution<a class="headerlink" href="#challenge-2-schema-evolution" title="Permanent link">&para;</a></h4>
-<p><strong>Problem:</strong> Database schema changes break CDC.</p>
-<p><strong>Solution:</strong>
-- Schema registry
-- Backward-compatible changes
-- Versioned schemas</p>
-<h4 id="challenge-3-transaction-consistency">Challenge 3: Transaction Consistency<a class="headerlink" href="#challenge-3-transaction-consistency" title="Permanent link">&para;</a></h4>
-<p><strong>Problem:</strong> Need to maintain transaction boundaries.</p>
-<p><strong>Solution:</strong>
-- Use transaction-aware CDC tools
-- Process transactions atomically
-- Handle partial transactions</p>
-<h3 id="cost-considerations">Cost Considerations<a class="headerlink" href="#cost-considerations" title="Permanent link">&para;</a></h3>
-<p><strong>CDC costs:</strong>
-- Infrastructure (Kafka, compute)
-- Storage (change events)
-- Processing (transformation)</p>
-<p><strong>Optimization:</strong>
-- Filter unnecessary changes
-- Compress change events
-- Archive old changes</p>
-<h3 id="related-topics">Related Topics<a class="headerlink" href="#related-topics" title="Permanent link">&para;</a></h3>
+<p><strong>Enforcement:</strong>
+- Validate schema at ingestion boundary
+- Reject violations immediately
+- Alert on schema drift
+- Require contract updates for breaking changes</p>
+<p><strong>Impact:</strong></p>
 <ul>
-<li><strong><a href="../batch-vs-streaming/">Batch vs Streaming</a></strong> - Other ingestion patterns</li>
-<li><strong><a href="../../data-architecture/">Data Architecture</a></strong> - How to store CDC data</li>
-<li><strong><a href="../../data-quality/">Data Quality</a></strong> - Ensuring CDC data quality</li>
+<li><strong>Reliability</strong>: Catch issues before data enters platform (99% reduction in downstream failures)</li>
+<li><strong>MTTR</strong>: Issues detected in minutes, not days</li>
+<li><strong>Developer velocity</strong>: Clear expectations, fewer surprises</li>
+<li><strong>Trust</strong>: Downstream teams know what to expect</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">For Managers</p>
+<p>Contract-first ingestion reduces support burden by 60-80%. Teams know what to expect, and issues are caught early.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">For Directors</p>
+<p>Without contracts, schema drift incidents cost 10-20 engineer-hours per incident. At scale, this compounds into significant operational debt.</p>
+</div>
+<hr />
+<h3 id="2-paved-paths-over-a-pipeline-zoo">2. Paved Paths Over a Pipeline Zoo<a class="headerlink" href="#2-paved-paths-over-a-pipeline-zoo" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves_1">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves_1" title="Permanent link">&para;</a></h4>
+<p><strong>Pipeline sprawl and inconsistent patterns.</strong></p>
+<p>When every team builds their own ingestion pipeline, you get:
+- 50 different ways to do the same thing
+- Inconsistent error handling
+- Duplicate infrastructure
+- No economies of scale
+- Harder to optimize and maintain</p>
+<p><strong>Real-world example:</strong></p>
+<p>At a 500-engineer company, we found:
+- 200+ ingestion pipelines
+- 15 different patterns for the same use case
+- 3 different Kafka clusters (different teams, different configs)
+- No standard monitoring or alerting
+- Cost 3x higher than necessary</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p>Provide <strong>paved paths</strong>—standardized, supported patterns:</p>
+<p><strong>Standard ingestion templates:</strong>
+- CDC template (Postgres → BigQuery)
+- Batch template (S3 → Data Lake)
+- Streaming template (Kafka → Warehouse)
+- API template (REST → Storage)</p>
+<p><strong>Self-serve platform:</strong>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="c1"># Developer registers new source</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>platform<span class="w"> </span>ingest<span class="w"> </span>register<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">  </span>--source<span class="w"> </span>postgres://db.example.com/users<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span>--destination<span class="w"> </span>gcs://raw/users<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">  </span>--template<span class="w"> </span>cdc<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span>--sla<span class="w"> </span>15min<span class="w"> </span><span class="se">\</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span>--owner<span class="w"> </span>analytics-team
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="c1"># Platform automatically:</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># - Creates CDC pipeline</span>
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="c1"># - Sets up monitoring</span>
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="c1"># - Creates contract</span>
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="c1"># - Provisions resources</span>
+</span></code></pre></div></p>
+<p><strong>Escape hatches:</strong>
+- Allow deviations when needed
+- Require justification and review
+- Promote successful patterns back to paved paths</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>Consistency</strong>: 80%+ of pipelines use standard patterns</li>
+<li><strong>Cost</strong>: 40-60% reduction through shared infrastructure</li>
+<li><strong>Onboarding</strong>: New pipelines in hours, not weeks</li>
+<li><strong>Maintenance</strong>: Standard patterns easier to optimize and fix</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">For Data Engineers</p>
+<p>Paved paths mean you don't reinvent the wheel. Focus on business logic, not infrastructure.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">For Managers</p>
+<p>Pipeline sprawl is a silent cost. Standardization reduces operational burden and enables optimization.</p>
+</div>
+<hr />
+<h3 id="3-freshness-as-a-first-class-slo">3. Freshness as a First-Class SLO<a class="headerlink" href="#3-freshness-as-a-first-class-slo" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves_2">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves_2" title="Permanent link">&para;</a></h4>
+<p><strong>Unclear freshness expectations causing business impact.</strong></p>
+<p>Without explicit freshness SLAs:
+- Analytics dashboards show stale data
+- ML models train on outdated features
+- Business decisions based on incomplete information
+- No accountability when data is late</p>
+<p><strong>Real-world example:</strong></p>
+<p>A revenue dashboard showed yesterday's data as "current." Business team made decisions based on stale data, leading to:
+- Incorrect inventory planning
+- Missed revenue opportunities
+- Loss of trust in data platform</p>
+<p><strong>Root cause</strong>: No freshness SLA, no monitoring, no alerts.</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p><strong>Define freshness SLAs explicitly:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Data Source</th>
+<th>Freshness SLA</th>
+<th>Business Impact</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Payment events</td>
+<td>5 minutes</td>
+<td>Real-time fraud detection</td>
+</tr>
+<tr>
+<td>User profiles</td>
+<td>15 minutes</td>
+<td>Personalization</td>
+</tr>
+<tr>
+<td>Product catalog</td>
+<td>1 hour</td>
+<td>E-commerce listings</td>
+</tr>
+<tr>
+<td>Historical reports</td>
+<td>24 hours</td>
+<td>Analytics</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Monitor and alert:</strong>
+<div class="language-sql highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1">-- Freshness check</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">SELECT</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">  </span><span class="k">source</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">  </span><span class="k">MAX</span><span class="p">(</span><span class="n">ingestion_timestamp</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">last_ingestion</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">  </span><span class="k">CURRENT_TIMESTAMP</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="k">MAX</span><span class="p">(</span><span class="n">ingestion_timestamp</span><span class="p">)</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">age</span><span class="p">,</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">  </span><span class="k">CASE</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="k">WHEN</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">SLA_THRESHOLD</span><span class="w"> </span><span class="k">THEN</span><span class="w"> </span><span class="s1">&#39;VIOLATED&#39;</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="k">ELSE</span><span class="w"> </span><span class="s1">&#39;OK&#39;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">  </span><span class="k">END</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">status</span>
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="k">FROM</span><span class="w"> </span><span class="n">raw</span><span class="p">.</span><span class="n">events</span>
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">source</span>
+</span></code></pre></div></p>
+<p><strong>Automated alerting:</strong>
+- Alert when freshness &gt; SLA
+- Alert on trends (getting slower)
+- Alert on complete stops</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>Trust</strong>: Business teams know data freshness guarantees</li>
+<li><strong>Accountability</strong>: Clear ownership and SLAs</li>
+<li><strong>MTTR</strong>: Issues detected immediately, not discovered later</li>
+<li><strong>Business value</strong>: Data-driven decisions based on fresh data</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">For Managers</p>
+<p>Freshness SLAs create accountability. When data is late, you know who to contact and what the impact is.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">For Directors</p>
+<p>Stale data leads to bad decisions. Explicit freshness SLAs prevent business impact and build trust.</p>
+</div>
+<hr />
+<h3 id="4-cost-aware-ingestion-by-design">4. Cost-Aware Ingestion by Design<a class="headerlink" href="#4-cost-aware-ingestion-by-design" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves_3">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves_3" title="Permanent link">&para;</a></h4>
+<p><strong>Ingestion costs growing unchecked.</strong></p>
+<p>At scale, small inefficiencies compound:
+- Streaming when batch would suffice (3-5x cost)
+- Ingesting unused data
+- Inefficient formats (JSON vs Parquet)
+- No cost attribution</p>
+<p><strong>Real-world example:</strong></p>
+<p>A team ingested 10TB/day of user events via streaming. Analysis showed:
+- 80% of queries accessed data &gt; 1 hour old
+- Streaming cost: $5,000/month
+- Batch equivalent: $1,000/month
+- <strong>Waste: $4,000/month</strong> (48K/year)</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p><strong>Cost-aware decision framework:</strong></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>Freshness Requirement?
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>├─ &lt; 1 minute → Streaming (justified)
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>├─ 1-15 minutes → Micro-batch (80% cost savings)
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>└─ &gt; 15 minutes → Batch (95% cost savings)
+</span></code></pre></div>
+<p><strong>Cost attribution:</strong>
+- Track cost by team, source, consumer
+- Showback (or chargeback) to create awareness
+- Monthly cost reviews</p>
+<p><strong>Optimization patterns:</strong>
+- Convert JSON to Parquet (50-70% storage savings)
+- Enable lifecycle policies (50-70% on old data)
+- Compact small files (20-30% compute savings)
+- Archive unused sources</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>Cost</strong>: 20-40% reduction with basic optimizations</li>
+<li><strong>Awareness</strong>: Teams see their costs, optimize proactively</li>
+<li><strong>Scale</strong>: Platform can handle more data without cost explosion</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">For Data Engineers</p>
+<p>Start with the slowest acceptable latency. You can always optimize later when you have data.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">For Managers</p>
+<p>Unattributed costs lead to waste. Cost awareness drives optimization and accountability.</p>
+</div>
+<hr />
+<h3 id="5-default-lineage-not-optional-lineage">5. Default Lineage, Not Optional Lineage<a class="headerlink" href="#5-default-lineage-not-optional-lineage" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves_4">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves_4" title="Permanent link">&para;</a></h4>
+<p><strong>Impact analysis and root cause analysis are impossible.</strong></p>
+<p>Without lineage:
+- Can't determine impact of source changes
+- Hard to trace bad data to its origin
+- Difficult to understand data dependencies
+- Compliance and audit challenges</p>
+<p><strong>Real-world example:</strong></p>
+<p>A source system changed a field from <code>string</code> to <code>integer</code>. Without lineage:
+- 2 days to identify all affected pipelines
+- 5 broken dashboards discovered by users
+- 3 failed ML model training jobs
+- 8 hours of debugging</p>
+<p>With lineage:
+- Impact identified in 5 minutes
+- All affected teams notified immediately
+- Proactive fixes before breakage</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p><strong>Automatic lineage tracking:</strong></p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Lineage captured automatically</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nd">@track_lineage</span><span class="p">(</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="n">inputs</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;raw.events&quot;</span><span class="p">],</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>    <span class="n">outputs</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;curated.user_events&quot;</span><span class="p">],</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="n">transformation</span><span class="o">=</span><span class="s2">&quot;filter_and_aggregate&quot;</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="p">)</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="k">def</span><span class="w"> </span><span class="nf">transform_events</span><span class="p">():</span>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a>    <span class="o">...</span>
+</span></code></pre></div>
+<p><strong>Lineage visualization:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>raw.events → transform → curated.user_events → dashboard
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>                ↓
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>            ml_features → model
+</span></code></pre></div></p>
+<p><strong>Use cases:</strong>
+- <strong>Impact analysis</strong>: What breaks if source changes?
+- <strong>Root cause analysis</strong>: Where did bad data come from?
+- <strong>Compliance</strong>: Document data flow for audits
+- <strong>Optimization</strong>: Identify unused or redundant pipelines</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>MTTR</strong>: Root cause analysis in minutes, not hours</li>
+<li><strong>Reliability</strong>: Proactive impact analysis prevents breakage</li>
+<li><strong>Compliance</strong>: Automated lineage for audits</li>
+<li><strong>Optimization</strong>: Identify and remove unused pipelines</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">For Data Engineers</p>
+<p>Lineage is like version control for data. You can't operate at scale without it.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">For Managers</p>
+<p>Lineage reduces incident response time by 70-80%. Worth the investment.</p>
+</div>
+<hr />
+<h3 id="6-legacy-decommissioning-by-replacement-not-force">6. Legacy Decommissioning by Replacement, Not Force<a class="headerlink" href="#6-legacy-decommissioning-by-replacement-not-force" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves_5">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves_5" title="Permanent link">&para;</a></h4>
+<p><strong>Legacy pipelines that won't die.</strong></p>
+<p>Forcing teams to migrate creates:
+- Resistance and pushback
+- Incomplete migrations
+- Parallel systems (old + new)
+- Higher costs
+- Technical debt</p>
+<p><strong>Real-world example:</strong></p>
+<p>A legacy ETL system processed 500 pipelines. Migration plan:
+- Force migration in 6 months
+- Result: 200 pipelines migrated, 300 still on legacy
+- Now running both systems (2x cost)
+- Legacy system can't be decommissioned</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p><strong>Replace, don't force:</strong></p>
+<ol>
+<li><strong>Build better alternative</strong> (paved paths, self-serve)</li>
+<li><strong>Make migration easy</strong> (automated tools, support)</li>
+<li><strong>Show value</strong> (faster, cheaper, more reliable)</li>
+<li><strong>Natural migration</strong> (teams migrate when ready)</li>
+<li><strong>Deprecate gradually</strong> (stop new pipelines on legacy)</li>
+</ol>
+<p><strong>Migration incentives:</strong>
+- Faster onboarding (hours vs weeks)
+- Better observability
+- Lower costs
+- Self-serve capabilities</p>
+<p><strong>Timeline:</strong>
+- Year 1: Build alternative, migrate early adopters
+- Year 2: Majority migration, stop new pipelines on legacy
+- Year 3: Final migration, decommission legacy</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>Adoption</strong>: 90%+ migration without forcing</li>
+<li><strong>Cost</strong>: Single system, not parallel</li>
+<li><strong>Velocity</strong>: Teams migrate when ready, not under pressure</li>
+<li><strong>Technical debt</strong>: Legacy systems decommissioned naturally</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">For Managers</p>
+<p>Forcing migration creates resistance. Building better alternatives creates pull.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">For Directors</p>
+<p>Parallel systems cost 2x. Natural migration is slower but more sustainable.</p>
+</div>
+<hr />
+<h3 id="7-domain-autonomy-with-guardrails">7. Domain Autonomy with Guardrails<a class="headerlink" href="#7-domain-autonomy-with-guardrails" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves_6">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves_6" title="Permanent link">&para;</a></h4>
+<p><strong>Centralized bottlenecks vs uncontrolled sprawl.</strong></p>
+<p>Pure centralization:
+- Platform team becomes bottleneck
+- Slow to adapt to domain needs
+- Teams wait weeks for pipelines</p>
+<p>Pure decentralization:
+- Inconsistent patterns
+- Duplication and waste
+- Hard to govern</p>
+<p><strong>Real-world example:</strong></p>
+<p>A centralized platform team managed all ingestion. Result:
+- 4-week wait time for new pipelines
+- Teams built shadow systems
+- 3 different ingestion patterns emerged
+- No standardization</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p><strong>Hybrid model: Platform enables, domains execute.</strong></p>
+<p><strong>Platform team provides:</strong>
+- Infrastructure (Kafka, storage, compute)
+- Standard patterns (paved paths)
+- Tooling (self-serve, monitoring)
+- Governance framework (contracts, SLAs)</p>
+<p><strong>Domain teams own:</strong>
+- Business logic
+- Transformations
+- Data quality
+- Cost optimization</p>
+<p><strong>Guardrails:</strong>
+- Contracts (schema, SLAs)
+- Cost attribution (showback)
+- Quality standards (enforced)
+- Security policies (automated)</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>Velocity</strong>: Teams move fast (self-serve)</li>
+<li><strong>Consistency</strong>: Standard patterns enforced</li>
+<li><strong>Scale</strong>: Platform team doesn't bottleneck</li>
+<li><strong>Ownership</strong>: Domains accountable for their data</li>
+</ul>
+<div class="admonition success">
+<p class="admonition-title">For Data Engineers</p>
+<p>Self-serve capabilities mean you can build pipelines in hours, not weeks.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">For Managers</p>
+<p>Hybrid model balances speed and consistency. Platform enables, domains execute.</p>
+</div>
+<hr />
+<h3 id="8-preparing-for-agentic-automated-ingestion-systems">8. Preparing for Agentic / Automated Ingestion Systems<a class="headerlink" href="#8-preparing-for-agentic-automated-ingestion-systems" title="Permanent link">&para;</a></h3>
+<h4 id="what-problem-this-solves_7">What Problem This Solves<a class="headerlink" href="#what-problem-this-solves_7" title="Permanent link">&para;</a></h4>
+<p><strong>Future-proofing for AI-assisted data engineering.</strong></p>
+<p>As AI tools improve, ingestion will become more automated. Systems designed for manual configuration won't adapt.</p>
+<p><strong>Real-world example:</strong></p>
+<p>Current state: Engineers manually configure each ingestion pipeline.</p>
+<p>Future state: AI agents automatically:
+- Discover new data sources
+- Generate ingestion pipelines
+- Create contracts
+- Set up monitoring</p>
+<p><strong>Mitigation strategy:</strong></p>
+<p><strong>Design for automation:</strong></p>
+<p><strong>Machine-readable contracts:</strong>
+<div class="language-yaml highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="c1"># Contracts in YAML (not just documentation)</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">source</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">payment_events</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nt">schema</span><span class="p">:</span><span class="w"> </span><span class="c1"># Machine-readable</span>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">  </span><span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.0</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="w">  </span><span class="nt">fields</span><span class="p">:</span><span class="w"> </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nt">sla</span><span class="p">:</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a><span class="w">  </span><span class="nt">freshness</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5 minutes</span>
+</span></code></pre></div></p>
+<p><strong>API-first platform:</strong>
+- REST APIs for all operations
+- No manual UI required
+- Programmatic pipeline creation</p>
+<p><strong>Standardized patterns:</strong>
+- AI can learn from examples
+- Consistent structure
+- Predictable behavior</p>
+<p><strong>Observability:</strong>
+- Rich metadata
+- Automated quality checks
+- Self-healing capabilities</p>
+<p><strong>Impact:</strong></p>
+<ul>
+<li><strong>Future-ready</strong>: Platform adapts to AI tools</li>
+<li><strong>Efficiency</strong>: Automated pipeline creation</li>
+<li><strong>Scale</strong>: Handle more sources without linear team growth</li>
+<li><strong>Quality</strong>: AI-assisted quality checks</li>
+</ul>
+<div class="admonition tip">
+<p class="admonition-title">For Data Engineers</p>
+<p>Design systems that AI can understand and operate. Machine-readable contracts and APIs are key.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">For Directors</p>
+<p>AI-assisted data engineering is coming. Platforms designed for automation will have competitive advantage.</p>
+</div>
+<hr />
+<h3 id="cross-references">Cross-References<a class="headerlink" href="#cross-references" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong><a href="../../data-architecture/ingestion-architecture/">Ingestion Architecture</a></strong> - Technical patterns and implementation</li>
+<li><strong><a href="../../data-engineering/platform-operating-model/">Platform &amp; Operating Model</a></strong> - Organizational structure</li>
+<li><strong><a href="../../reference/leadership-view/">Leadership View</a></strong> - Measuring platform success</li>
+<li><strong><a href="../../reference/future-trends/">Future Trends</a></strong> - Emerging technologies</li>
 </ul>
 <hr />
-<p><strong>Next</strong>: <a href="../push-vs-pull/">Push vs Pull →</a></p>
+<h3 id="key-takeaways">Key Takeaways<a class="headerlink" href="#key-takeaways" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Contracts before pipelines</strong> - Prevent schema drift issues</li>
+<li><strong>Paved paths</strong> - Standardize to reduce cost and complexity</li>
+<li><strong>Freshness SLAs</strong> - Create accountability and trust</li>
+<li><strong>Cost awareness</strong> - Design for efficiency from the start</li>
+<li><strong>Default lineage</strong> - Enable impact analysis and debugging</li>
+<li><strong>Replace, don't force</strong> - Natural migration over mandates</li>
+<li><strong>Domain autonomy</strong> - Platform enables, domains execute</li>
+<li><strong>Design for automation</strong> - Future-proof for AI-assisted engineering</li>
+</ol>
+<hr />
+<p><strong>Next</strong>: <a href="../../data-architecture/ingestion-architecture/">Data Architecture → Ingestion Architecture</a></p>
 
 
 
@@ -2727,7 +2877,7 @@ Poll for changes using timestamps or version columns.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 10:29:16 UTC"><span class="timeago" datetime="2025-12-29T10:29:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 10:29:16 UTC">2025-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 17:34:43 UTC"><span class="timeago" datetime="2025-12-29T17:34:43+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 17:34:43 UTC">2025-12-29</span>
   </span>
 
     
@@ -2737,7 +2887,7 @@ Poll for changes using timestamps or version columns.</p>
     <span class="md-icon" title="Created">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 10:29:16 UTC"><span class="timeago" datetime="2025-12-29T10:29:16+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 10:29:16 UTC">2025-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 17:34:43 UTC"><span class="timeago" datetime="2025-12-29T17:34:43+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 17:34:43 UTC">2025-12-29</span>
   </span>
 
     
