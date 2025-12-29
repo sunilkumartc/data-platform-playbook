@@ -70,6 +70,14 @@ This playbook provides **actionable, opinionated guidance** for data engineering
 
     [:octicons-arrow-right-24: Ensure quality](data-quality/index.md)
 
+-   :material-rocket-launch:{ .lg .middle } __[Platform Strategy](platform-strategy-and-future-direction.md)__
+
+    ---
+
+    Next-gen platform strategy, agentic systems, data zones
+
+    [:octicons-arrow-right-24: Learn more](platform-strategy-and-future-direction.md)
+
 </div>
 
 ## Core Principles

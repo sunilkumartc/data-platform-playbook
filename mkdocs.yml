@@ -106,10 +106,12 @@ nav:
     - Data Quality: data-quality/index.md
     - Governance: data-quality/governance.md
     - Quality Checks: data-quality/checks.md
-  - Reference:
-    - Tooling Landscape: reference/tooling-landscape.md
+  - Platform Strategy:
+    - Next-Gen Strategy: platform-strategy-and-future-direction.md
     - Future Trends: reference/future-trends.md
     - Leadership View: reference/leadership-view.md
+  - Reference:
+    - Tooling Landscape: reference/tooling-landscape.md
 
 plugins:
   - search:

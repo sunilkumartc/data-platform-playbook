@@ -2,6 +2,9 @@
 
 The data engineering landscape evolves rapidly. This chapter covers emerging trends that are shaping the future of data platforms, with a pragmatic, production-focused perspective.
 
+!!! tip "Strategic Context"
+    For a deeper strategic view on agentic platforms and data zones, see **[Platform Strategy & Future Direction](../platform-strategy-and-future-direction.md)**.
+
 ## Data Contracts
 
 ### The Concept
@@ -185,6 +188,102 @@ Feature Definitions → Feature Computation → Feature Storage → Feature Serv
 - Small team (< 5 ML engineers)
 
 **Timeline**: 6-12 months to build/buy and adopt
+
+## Agentic Data Platforms & Domain-Oriented Zones
+
+### The Evolution
+
+Data platforms are evolving from **passive infrastructure** to **agentic systems** that actively manage data quality, optimize costs, and enable domain autonomy.
+
+**What "agentic" means:**
+- Platforms that detect and respond to issues autonomously
+- Systems that optimize themselves based on usage patterns
+- Infrastructure that learns from failures and prevents recurrence
+- Tooling that enables domain teams without constant platform intervention
+
+### Agentic Behavior in Platforms
+
+**Self-healing pipelines:**
+- Automatic retry with exponential backoff
+- Root cause analysis and pattern detection
+- Preventive actions based on learned patterns
+- Escalation only when autonomous resolution fails
+
+**Drift detection and prevention:**
+- Continuous schema monitoring
+- Contract validation at ingestion boundary
+- Automatic rejection of breaking changes
+- Proactive alerts before issues occur
+
+**Cost optimization:**
+- Usage pattern analysis
+- Automatic tiering (hot → warm → cold)
+- Unused resource detection and archival
+- Cost anomaly detection and alerting
+
+### Relationship to AI and Automation
+
+**AI-assisted data engineering:**
+- Code generation from natural language
+- Automated pipeline creation from contracts
+- Intelligent query optimization
+- Predictive quality monitoring
+
+**Automation layers:**
+1. **Infrastructure automation** - Provisioning, scaling, lifecycle
+2. **Pipeline automation** - Generation, deployment, monitoring
+3. **Quality automation** - Validation, testing, remediation
+4. **Optimization automation** - Cost, performance, reliability
+
+### Data Zones: Natural Evolution
+
+**Data zones** emerge naturally as platforms scale:
+
+**Raw Zone** - Source data, immutable, long retention
+**Curated Zone** - Cleaned, validated, enriched
+**Processed Zone** - Aggregated, optimized for queries
+**Feature/AI Zone** - ML-ready, served for models
+
+**Why zones matter:**
+- Clear ownership boundaries
+- Appropriate governance per zone
+- Cost optimization by lifecycle
+- Enables domain autonomy
+
+### Connection to Data Mesh
+
+Data zones align with data mesh thinking:
+- **Domain ownership** - Teams own their zones
+- **Data as product** - Zones are products with SLAs
+- **Self-serve infrastructure** - Platform enables zone management
+- **Federated governance** - Standards, not central control
+
+**Difference**: Zones are architectural boundaries; mesh is organizational model. Zones enable mesh.
+
+### What "Good" Looks Like in 12-24 Months
+
+**Platform capabilities:**
+- 80%+ of pipelines self-serve
+- 70%+ of issues resolved autonomously
+- 60%+ reduction in KTLO work
+- Domain teams fully autonomous
+
+**Organizational model:**
+- Platform team: Infrastructure and standards
+- Domain teams: Business logic and data products
+- Clear zone ownership and governance
+
+**Technology:**
+- AI-assisted pipeline generation
+- Autonomous quality monitoring
+- Self-optimizing infrastructure
+- Intelligent cost management
+
+!!! tip "For Data Engineers"
+    Agentic platforms mean less firefighting, more building. Focus on business logic, not infrastructure operations.
+
+!!! success "For Directors"
+    Agentic platforms reduce operational burden by 60-80%, enabling platform teams to focus on strategic capabilities.
 
 ## AI-Assisted Data Engineering
 

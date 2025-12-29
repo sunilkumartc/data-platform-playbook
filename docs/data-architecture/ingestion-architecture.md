@@ -224,11 +224,168 @@ for attempt in range(max_retries):
 3. **Incremental loads** - Only fetch changed data
 4. **Lifecycle policies** - Move old data to cheaper storage
 
+## Agentic Controls & Data Zones in Ingestion Architecture
+
+### Self-Serve Contracts
+
+**Architecture pattern:**
+
+Ingestion platforms evolve to support contract-first, self-serve pipeline creation:
+
+```mermaid
+graph LR
+    A[Contract Definition] --> B[Pipeline Generation]
+    B --> C[Resource Provisioning]
+    C --> D[Monitoring Setup]
+    D --> E[Pipeline Active]
+    
+    F[Schema Registry] -.Validates.-> A
+    G[Policy Engine] -.Enforces.-> B
+    
+    style A fill:#80deea
+    style B fill:#80deea
+    style C fill:#b2dfdb
+    style D fill:#90caf9
+    style E fill:#c8e6c9
+```
+
+**Implementation:**
+- Contract stored in schema registry
+- Pipeline templates for common patterns
+- Automated resource provisioning
+- Standard monitoring and alerting
+
+**Impact:**
+- Time to value: Hours instead of weeks
+- Consistency: Standard patterns enforced
+- Quality: Contracts prevent issues
+
+### Autonomous Error Detection
+
+**Architecture pattern:**
+
+Ingestion systems detect and respond to errors autonomously:
+
+**Error detection:**
+- Real-time monitoring of pipeline health
+- Pattern recognition for common failures
+- Anomaly detection for unusual behavior
+
+**Autonomous response:**
+- Automatic retry with backoff
+- Root cause analysis
+- Preventive actions
+- Escalation when needed
+
+**Example flow:**
+```
+Error Detected
+    ↓
+Pattern Matching (network timeout)
+    ↓
+Automatic Retry (exponential backoff)
+    ↓
+Success → Continue
+Failure → Escalate
+```
+
+### Policy-Gated Control Planes
+
+**Architecture pattern:**
+
+Ingestion control planes enforce policies automatically:
+
+**Policy types:**
+- **Schema policies** - Enforce contract compliance
+- **Cost policies** - Prevent cost overruns
+- **Quality policies** - Enforce quality standards
+- **Security policies** - Access control, encryption
+
+**Enforcement:**
+- Policies defined as code
+- Automatic validation at ingestion boundary
+- Rejection of non-compliant data
+- Alerting on policy violations
+
+### Data Zones in Ingestion Flows
+
+**Zone-based ingestion architecture:**
+
+```mermaid
+graph TB
+    A[Source Systems] --> B[Ingestion Layer]
+    B --> C[Raw Zone<br/>Immutable<br/>Long Retention]
+    C --> D[Curated Zone<br/>Validated<br/>Enriched]
+    D --> E[Processed Zone<br/>Aggregated]
+    D --> F[Feature/AI Zone<br/>ML-Ready]
+    
+    G[Contracts] -.Govern.-> B
+    H[Policies] -.Enforce.-> C
+    I[Quality Checks] -.Validate.-> D
+    
+    style C fill:#b2dfdb
+    style D fill:#80deea
+    style E fill:#90caf9
+    style F fill:#64b5f6
+```
+
+**Zone characteristics:**
+
+**Raw Zone ingestion:**
+- Minimal transformation
+- Schema-on-read
+- Long retention
+- Immutable storage
+
+**Curated Zone ingestion:**
+- Quality validation
+- Schema enforcement
+- Enrichment
+- Optimized formats
+
+**Impact on pipeline design:**
+- Clear boundaries between zones
+- Zone-specific transformation logic
+- Zone-appropriate storage formats
+- Zone-specific lifecycle policies
+
+### Impact on Observability
+
+**Zone-aware observability:**
+
+- **Raw Zone**: Ingestion metrics, schema validation, volume
+- **Curated Zone**: Quality scores, freshness, completeness
+- **Processed Zone**: Query performance, usage patterns
+- **Feature Zone**: Serving latency, feature freshness
+
+**Lineage tracking:**
+- Zone-to-zone data flow
+- Transformation lineage
+- Ownership tracking
+- Impact analysis
+
+### Impact on Lineage
+
+**Zone-based lineage:**
+
+```
+Source → Raw Zone → Curated Zone → Processed Zone
+                          ↓
+                    Feature Zone
+```
+
+**Benefits:**
+- Clear data flow visualization
+- Zone-specific impact analysis
+- Ownership clarity
+- Compliance documentation
+
 ## Related Topics
 
 - **[Data Ingestion](../data-ingestion/index.md)** - Ingestion patterns
 - **[Storage](storage.md)** - Storage design
 - **[Data Processing](../data-processing/index.md)** - Processing ingested data
+- **[Platform Strategy](../platform-strategy-and-future-direction.md)** - Strategic direction
 
 ---
 
