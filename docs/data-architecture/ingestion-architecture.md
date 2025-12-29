@@ -8,19 +8,30 @@ Ingestion architecture defines how data flows from source systems into your plat
 
 ## Architecture Layers
 
+```mermaid
+graph TB
+    A[Source Systems] --> B[Ingestion Layer]
+    B1[Batch] --> B
+    B2[Streaming] --> B
+    B3[CDC] --> B
+    
+    B --> C[Raw Storage<br/>Data Lake]
+    C --> D[Transformation Layer]
+    D --> E[Curated Storage<br/>Lakehouse/Warehouse]
+    E --> F[Serving Layer]
+    F1[Analytics] --> F
+    F2[ML Models] --> F
+    F3[APIs] --> F
+    
+    style A fill:#e3f2fd
+    style B fill:#80deea
+    style C fill:#b2dfdb
+    style D fill:#80deea
+    style E fill:#b2dfdb
+    style F fill:#e3f2fd
 ```
-Source Systems
-    ↓
-Ingestion Layer (Batch/Streaming/CDC)
-    ↓
-Raw Storage (Lake)
-    ↓
-Transformation Layer
-    ↓
-Curated Storage (Lakehouse/Warehouse)
-    ↓
-Serving Layer (Analytics/ML/APIs)
-```
+
+**Complete data flow from source systems to consumption.**
 
 ## Ingestion Patterns
 

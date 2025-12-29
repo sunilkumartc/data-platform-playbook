@@ -61,6 +61,24 @@ Raw Layer (Lake) → Curated Layer (Warehouse) → Serving Layer
 
 ## Storage Tiers
 
+```mermaid
+graph LR
+    A[Data Ingestion] --> B[Hot Storage<br/>Active Queries<br/>High Cost]
+    B -->|30 days| C[Warm Storage<br/>Occasional Access<br/>Medium Cost]
+    C -->|90 days| D[Cold Storage<br/>Archive/Compliance<br/>Low Cost]
+    
+    E[Lifecycle Policy] -.Manages.-> B
+    E -.Manages.-> C
+    E -.Manages.-> D
+    
+    style B fill:#ffccbc
+    style C fill:#fff9c4
+    style D fill:#c8e6c9
+    style E fill:#90caf9
+```
+
+**Automated lifecycle management moving data to cost-appropriate tiers.**
+
 ### Hot Storage
 
 **Use case**: Active queries, dashboards, real-time analytics

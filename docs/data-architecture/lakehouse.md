@@ -10,10 +10,31 @@ The **Lakehouse** is a modern data architecture that combines the cost-effective
 
 **Lakehouse** = Data lake storage + warehouse capabilities
 
-**Architecture:**
+```mermaid
+graph LR
+    subgraph "Traditional Warehouse"
+        A1[Source] --> B1[ETL Pipeline]
+        B1 --> C1[Warehouse]
+        C1 --> D1[Analytics]
+        style C1 fill:#ffccbc
+    end
+    
+    subgraph "Modern Lakehouse"
+        A2[Source] --> B2[Ingestion]
+        B2 --> C2[Raw Layer<br/>Lake Storage]
+        C2 --> D2[Curated Layer<br/>Warehouse Capabilities]
+        D2 --> E2[Serving Layer]
+        E2 --> F2[Analytics]
+        E2 --> G2[ML]
+        E2 --> H2[APIs]
+        style C2 fill:#b2dfdb
+        style D2 fill:#80deea
+    end
+    
+    A1 -.Evolution.-> A2
 ```
-Raw Layer (Lake) → Curated Layer (Warehouse) → Serving Layer
-```
+
+**Shift from monolithic warehouses to modern lakehouse architectures.**
 
 ### Key Characteristics
 

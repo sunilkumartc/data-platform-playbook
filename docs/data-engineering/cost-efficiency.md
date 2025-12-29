@@ -10,6 +10,15 @@ Cost optimization isn't about cutting corners—it's about spending wisely. At s
 
 ### Understanding Your Costs
 
+```mermaid
+pie title "Cost Distribution"
+    "Compute" : 50
+    "Storage" : 25
+    "Network" : 10
+    "Operations" : 10
+    "Other" : 5
+```
+
 **Typical cost breakdown:**
 
 | Category | % of Total | Description |

@@ -6,6 +6,30 @@
 
 ## Overview
 
+```mermaid
+graph TD
+    A[Ingest] --> B{Validate}
+    B -->|Pass| C[Transform]
+    B -->|Fail| Z[Quarantine]
+    C --> D{Publish}
+    D -->|Success| E[Monitor]
+    D -->|Retry| C
+    E --> F[Alert on Issues]
+    
+    G[Schedule] -.Triggers.-> A
+    H[Retry Logic] -.Handles.-> D
+    I[Dependencies] -.Manages.-> A
+    
+    style A fill:#80deea
+    style B fill:#fff9c4
+    style C fill:#80deea
+    style D fill:#fff9c4
+    style E fill:#b2dfdb
+    style Z fill:#ffccbc
+```
+
+**Workflow orchestration managing dependencies and retries.**
+
 Data orchestration is about coordinating multiple data pipelines, managing dependencies, handling failures, and ensuring data flows reliably through your platform.
 
 ## Key Topics

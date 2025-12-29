@@ -52,6 +52,39 @@ Source-initiated vs platform-initiated ingestion.
 
 ## Ingestion Patterns
 
+```mermaid
+graph TB
+    subgraph "Batch Ingestion"
+        A1[Source] -->|Scheduled<br/>Hourly/Daily| B1[Extract]
+        B1 --> C1[Process]
+        C1 --> D1[Storage]
+        E1[Latency: Hours<br/>Cost: Low<br/>Complexity: Low] -.-> B1
+    end
+    
+    subgraph "Streaming Ingestion"
+        A2[Source] -->|Continuous| B2[Message Queue]
+        B2 --> C2[Stream Processor]
+        C2 --> D2[Storage]
+        E2[Latency: Seconds<br/>Cost: High<br/>Complexity: High] -.-> B2
+    end
+    
+    subgraph "CDC Ingestion"
+        A3[Database] -->|Transaction Log| B3[CDC Tool]
+        B3 --> C3[Change Events]
+        C3 --> D3[Storage]
+        E3[Latency: Real-time<br/>Cost: Medium<br/>Complexity: Medium] -.-> B3
+    end
+    
+    style A1 fill:#e3f2fd
+    style A2 fill:#e3f2fd
+    style A3 fill:#e3f2fd
+    style D1 fill:#b2dfdb
+    style D2 fill:#b2dfdb
+    style D3 fill:#b2dfdb
+```
+
+**Batch, streaming, and CDC ingestion patterns with trade-offs.**
+
 ### Batch Ingestion
 
 **When to use:**

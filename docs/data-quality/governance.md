@@ -6,6 +6,33 @@ Data quality and governance aren't nice-to-haves—they're prerequisites for tru
 
 > "Pipelines fail quietly. People fail when no one explains why they exist."
 
+## Platform Observability
+
+```mermaid
+graph TB
+    subgraph "Observability Dashboard"
+        A[Pipeline Health<br/>99.9% Uptime] 
+        B[Freshness<br/>15 min SLA]
+        C[Quality Score<br/>98.5%]
+        D[Error Rate<br/>0.1%]
+        E[SLA Status<br/>✅ Compliant]
+    end
+    
+    F[Data Sources] --> A
+    G[Ingestion] --> B
+    H[Validation] --> C
+    I[Processing] --> D
+    J[Monitoring] --> E
+    
+    style A fill:#c8e6c9
+    style B fill:#c8e6c9
+    style C fill:#c8e6c9
+    style D fill:#fff9c4
+    style E fill:#c8e6c9
+```
+
+**Observability and SLA tracking for platform reliability.**
+
 ## Data Quality Framework
 
 ### Quality Dimensions

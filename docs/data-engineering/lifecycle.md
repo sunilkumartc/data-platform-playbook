@@ -8,9 +8,40 @@ The data lifecycle encompasses the complete journey from source systems to consu
 
 ## Overview
 
+```mermaid
+graph LR
+    A[Source Systems] --> B[Ingestion]
+    B --> C[Storage Raw]
+    C --> D[Transformation]
+    D --> E[Storage Curated]
+    E --> F[Serving]
+    
+    B1[Batch] --> B
+    B2[Streaming] --> B
+    B3[CDC] --> B
+    
+    C1[Data Lake] --> C
+    C2[Object Storage] --> C
+    
+    D1[ELT] --> D
+    D2[Stream Processing] --> D
+    
+    E1[Warehouse] --> E
+    E2[Lakehouse] --> E
+    
+    F1[Analytics] --> F
+    F2[ML Models] --> F
+    F3[APIs] --> F
+    
+    style A fill:#e3f2fd
+    style B fill:#80deea
+    style C fill:#b2dfdb
+    style D fill:#80deea
+    style E fill:#b2dfdb
+    style F fill:#e3f2fd
 ```
-Source Systems → Ingestion → Storage (Raw) → Transformation → Storage (Curated) → Serving
-```
+
+**End-to-end lifecycle from ingestion to trusted consumption.**
 
 Each stage has distinct requirements, failure modes, and optimization opportunities.
 
