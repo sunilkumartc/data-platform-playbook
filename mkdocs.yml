@@ -1,0 +1,95 @@
+site_name: Data Platform Playbook
+site_description: A production-grade handbook for building and operating modern data platforms at scale
+site_author: Sunil Kumar T C
+site_url: https://sunilkumartc.github.io/data-platform-playbook/
+
+repo_name: sunilkumartc/data-platform-playbook
+repo_url: https://github.com/sunilkumartc/data-platform-playbook
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  palette:
+    # Light mode
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+  icon:
+    repo: fontawesome/brands/github
+    logo: material/database
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.details
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Home: index.md
+  - Data Engineering:
+    - Foundations: 01-foundations.md
+    - Lifecycle: 02-lifecycle.md
+    - Ingestion: 03-ingestion.md
+    - Storage: 04-storage.md
+    - Platform & Operating Model: 05-platform-operating-model.md
+    - Quality & Governance: 06-quality-governance.md
+    - Cost Efficiency: 07-cost-efficiency.md
+  - Reference:
+    - Tooling Landscape: 08-tooling-landscape.md
+    - Future Trends: 09-future-trends.md
+    - Leadership View: 10-leadership-view.md
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: timeago
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/sunilkumartc
+  version:
+    provider: mike
+
+copyright: Copyright &copy; 2024 Sunil Kumar T C
+

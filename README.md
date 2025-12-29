@@ -72,9 +72,67 @@ This playbook is built on these core principles:
 - **Cost Awareness**: Every architectural decision should consider cost implications.
 - **Opinionated Guidance**: Clear recommendations, not generic explanations.
 
+## 🚀 Getting Started
+
+### View Online
+
+The playbook is hosted on GitHub Pages: **[https://sunilkumartc.github.io/data-platform-playbook/](https://sunilkumartc.github.io/data-platform-playbook/)**
+
+### Local Development
+
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Serve locally:**
+   ```bash
+   mkdocs serve
+   ```
+   Then open http://127.0.0.1:8000 in your browser.
+
+3. **Build static site:**
+   ```bash
+   mkdocs build
+   ```
+
+### Deployment
+
+The site is automatically deployed to GitHub Pages via GitHub Actions when you push to the `main` branch.
+
+## 📁 Project Structure
+
+```
+data-platform-playbook/
+├── docs/                    # Documentation source files
+│   ├── index.md            # Home page
+│   ├── 01-foundations.md   # Core concepts
+│   ├── 02-lifecycle.md     # Data lifecycle
+│   └── ...                 # Other chapters
+├── .github/
+│   └── workflows/
+│       └── ci.yml          # GitHub Actions workflow
+├── mkdocs.yml              # MkDocs configuration
+├── requirements.txt        # Python dependencies
+└── README.md              # This file
+```
+
+## 🎨 Features
+
+- **Material Design** - Beautiful, modern UI with dark mode support
+- **Tabbed Navigation** - Easy navigation between sections
+- **Search** - Full-text search across all content
+- **Responsive** - Works on desktop, tablet, and mobile
+- **Auto-deployment** - Automatic deployment on push to main
+
 ## Contributing
 
-This playbook is designed to evolve. Contributions, corrections, and improvements are welcome.
+This playbook is designed to evolve. Contributions, corrections, and improvements are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Submit a pull request
 
 ## License
 
@@ -83,5 +141,7 @@ This playbook is designed to evolve. Contributions, corrections, and improvement
 ---
 
 **Last Updated**: 2024  
-**Maintained by**: Data Platform Team
+**Maintained by**: Sunil Kumar T C
+
+**Live Site**: [https://sunilkumartc.github.io/data-platform-playbook/](https://sunilkumartc.github.io/data-platform-playbook/)
 
