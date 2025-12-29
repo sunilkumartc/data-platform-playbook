@@ -121,6 +121,8 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/sunilkumartc
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/sunil-kumar-138b71319/
   version:
     provider: mike
   analytics:

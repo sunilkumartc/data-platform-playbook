@@ -6,7 +6,7 @@
 
 Bengaluru, India  
 📧 [sunilkumar.tc89@gmail.com](mailto:sunilkumar.tc89@gmail.com)  
-🔗 LinkedIn: [linkedin.com/in/sunil-kumar](https://linkedin.com/in/sunil-kumar)  
+🔗 LinkedIn: [linkedin.com/in/sunil-kumar-138b71319](https://www.linkedin.com/in/sunil-kumar-138b71319/)  
 🔗 GitHub: [data-platform-playbook](https://github.com/sunilkumartc/data-platform-playbook)
 
 ---
