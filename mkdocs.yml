@@ -110,8 +110,11 @@ nav:
     - Next-Gen Strategy: platform-strategy-and-future-direction.md
     - Future Trends: reference/future-trends.md
     - Leadership View: reference/leadership-view.md
-  - Reference:
+  - Tools & Leadership Interview Prep:
     - Tooling Landscape: reference/tooling-landscape.md
+    - Interview Prep:
+      - Leadership Interview Prep: reference/interview-prep/leadership-interview-prep.md
+      - Manager Feedback Examples: reference/interview-prep/manager-feedback-examples.md
 
 plugins:
   - search:
