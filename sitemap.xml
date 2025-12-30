@@ -2,126 +2,126 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/about/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/platform-strategy-and-future-direction/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-architecture/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-architecture/ingestion-architecture/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-architecture/lakehouse/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-architecture/storage/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-engineering/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-engineering/cost-efficiency/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-engineering/foundations/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-engineering/lifecycle/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-engineering/platform-operating-model/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/batch-vs-streaming/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/cdc/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/push-vs-pull/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-ingestion/strategic-guidelines/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-orchestration/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-orchestration/airflow/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-orchestration/dbt/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-processing/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-processing/bigquery/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-processing/spark/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-quality/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-quality/checks/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/data-quality/governance/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/reference/future-trends/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/reference/leadership-view/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/reference/tooling-landscape/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/reference/interview-prep/leadership-interview-prep/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
     <url>
          <loc>https://sunilkumartc.github.io/data-platform-playbook/reference/interview-prep/manager-feedback-examples/</loc>
-         <lastmod>2025-12-29</lastmod>
+         <lastmod>2025-12-30</lastmod>
     </url>
 </urlset>

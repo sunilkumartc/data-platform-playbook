@@ -2291,35 +2291,21 @@
 - Domain autonomy patterns
 - Future-proofing for AI-assisted ingestion</p>
 <h3 id="ingestion-patterns">Ingestion Patterns<a class="headerlink" href="#ingestion-patterns" title="Permanent link">&para;</a></h3>
-<pre class="mermaid"><code>graph TB
-    subgraph "Batch Ingestion"
-        A1[Source] --&gt;|Scheduled&lt;br/&gt;Hourly/Daily| B1[Extract]
-        B1 --&gt; C1[Process]
-        C1 --&gt; D1[Storage]
-        E1[Latency: Hours&lt;br/&gt;Cost: Low&lt;br/&gt;Complexity: Low] -.-&gt; B1
-    end
+<pre class="mermaid"><code>graph LR
+    A[Source Systems] --&gt; B[Batch&lt;br/&gt;Scheduled&lt;br/&gt;Hours/Days]
+    A --&gt; C[Streaming&lt;br/&gt;Continuous&lt;br/&gt;Seconds]
+    A --&gt; D[CDC&lt;br/&gt;Real-time&lt;br/&gt;Transaction Log]
 
-    subgraph "Streaming Ingestion"
-        A2[Source] --&gt;|Continuous| B2[Message Queue]
-        B2 --&gt; C2[Stream Processor]
-        C2 --&gt; D2[Storage]
-        E2[Latency: Seconds&lt;br/&gt;Cost: High&lt;br/&gt;Complexity: High] -.-&gt; B2
-    end
+    B --&gt; E[Storage]
+    C --&gt; E
+    D --&gt; E
 
-    subgraph "CDC Ingestion"
-        A3[Database] --&gt;|Transaction Log| B3[CDC Tool]
-        B3 --&gt; C3[Change Events]
-        C3 --&gt; D3[Storage]
-        E3[Latency: Real-time&lt;br/&gt;Cost: Medium&lt;br/&gt;Complexity: Medium] -.-&gt; B3
-    end
-
-    style A1 fill:#e3f2fd
-    style A2 fill:#e3f2fd
-    style A3 fill:#e3f2fd
-    style D1 fill:#b2dfdb
-    style D2 fill:#b2dfdb
-    style D3 fill:#b2dfdb</code></pre>
-<p><strong>Batch, streaming, and CDC ingestion patterns with trade-offs.</strong></p>
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style B fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
+    style C fill:#fff3e0,stroke:#f57c00,stroke-width:3px
+    style D fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
+    style E fill:#b2dfdb,stroke:#00796b,stroke-width:3px</code></pre>
+<p><strong>Three core ingestion patterns: Batch (scheduled), Streaming (continuous), and CDC (real-time).</strong></p>
 <h4 id="batch-ingestion">Batch Ingestion<a class="headerlink" href="#batch-ingestion" title="Permanent link">&para;</a></h4>
 <p><strong>When to use:</strong>
 - Historical loads, backfills
@@ -2448,7 +2434,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 29, 2025 17:34:43 UTC"><span class="timeago" datetime="2025-12-29T17:34:43+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 29, 2025 17:34:43 UTC">2025-12-29</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago" title="December 30, 2025 07:19:49 UTC"><span class="timeago" datetime="2025-12-30T07:19:49+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date" title="December 30, 2025 07:19:49 UTC">2025-12-30</span>
   </span>
 
     
