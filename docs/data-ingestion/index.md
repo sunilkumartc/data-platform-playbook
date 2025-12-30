@@ -66,37 +66,23 @@ Strategic approaches to building ingestion systems that scale and evolve.
 ## Ingestion Patterns
 
 ```mermaid
-graph TB
-    subgraph "Batch Ingestion"
-        A1[Source] -->|Scheduled<br/>Hourly/Daily| B1[Extract]
-        B1 --> C1[Process]
-        C1 --> D1[Storage]
-        E1[Latency: Hours<br/>Cost: Low<br/>Complexity: Low] -.-> B1
-    end
+graph LR
+    A[Source Systems] --> B[Batch<br/>Scheduled<br/>Hours/Days]
+    A --> C[Streaming<br/>Continuous<br/>Seconds]
+    A --> D[CDC<br/>Real-time<br/>Transaction Log]
     
-    subgraph "Streaming Ingestion"
-        A2[Source] -->|Continuous| B2[Message Queue]
-        B2 --> C2[Stream Processor]
-        C2 --> D2[Storage]
-        E2[Latency: Seconds<br/>Cost: High<br/>Complexity: High] -.-> B2
-    end
+    B --> E[Storage]
+    C --> E
+    D --> E
     
-    subgraph "CDC Ingestion"
-        A3[Database] -->|Transaction Log| B3[CDC Tool]
-        B3 --> C3[Change Events]
-        C3 --> D3[Storage]
-        E3[Latency: Real-time<br/>Cost: Medium<br/>Complexity: Medium] -.-> B3
-    end
-    
-    style A1 fill:#e3f2fd
-    style A2 fill:#e3f2fd
-    style A3 fill:#e3f2fd
-    style D1 fill:#b2dfdb
-    style D2 fill:#b2dfdb
-    style D3 fill:#b2dfdb
+    style A fill:#e3f2fd,stroke:#1976d2,stroke-width:3px
+    style B fill:#c8e6c9,stroke:#388e3c,stroke-width:3px
+    style C fill:#fff3e0,stroke:#f57c00,stroke-width:3px
+    style D fill:#f3e5f5,stroke:#7b1fa2,stroke-width:3px
+    style E fill:#b2dfdb,stroke:#00796b,stroke-width:3px
 ```
 
-**Batch, streaming, and CDC ingestion patterns with trade-offs.**
+**Three core ingestion patterns: Batch (scheduled), Streaming (continuous), and CDC (real-time).**
 
 ### Batch Ingestion
 
